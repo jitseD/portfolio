@@ -1,3 +1,38 @@
+@font-face {
+    font-family: "Finder";
+    src: url(../assets/fonts/Finder.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --c-white: #f2f2f2;
+    --c-black: #0d0d0d;
+
+    --f-body: "Montserrat", sans-serif;
+    --f-title: "Montserrat Alternates", sans-serif;
+    --f-big: "Finder", sans-serif;
+
+    --f-xs: clamp(0.4297rem, 0.7827rem + -0.3922vw, 0.6944rem);
+    --f-s: clamp(0.6953rem, 0.8793rem + -0.2045vw, 0.8333rem);
+    --f-m: clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem);
+    --f-l: clamp(1.2rem, 0.9933rem + 0.9189vw, 1.8203rem);
+    --f-xl: clamp(1.44rem, 0.9383rem + 2.2299vw, 2.9452rem);
+    --f-2xl: clamp(1.728rem, 0.7156rem + 4.4997vw, 4.7653rem);
+    --f-3xl: clamp(2.0736rem, 0.1947rem + 8.3505vw, 7.7102rem);
+    --f-4xl: clamp(2.4883rem, -0.8406rem + 14.7953vw, 12.4751rem);
+
+    --s-3xs: clamp(0.25rem, 0.2083rem + 0.1852vw, 0.375rem);
+    --s-2xs: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
+    --s-xs: clamp(0.75rem, 0.625rem + 0.5556vw, 1.125rem);
+    --s-s: clamp(1rem, 0.8333rem + 0.7407vw, 1.5rem);
+    --s-m: clamp(1.5rem, 1.25rem + 1.1111vw, 2.25rem);
+    --s-l: clamp(2rem, 1.6667rem + 1.4815vw, 3rem);
+    --s-xl: clamp(3rem, 2.5rem + 2.2222vw, 4.5rem);
+    --s-2xl: clamp(4rem, 3.3333rem + 2.963vw, 6rem);
+    --s-3xl: clamp(6rem, 5rem + 4.4444vw, 9rem);
+}
+
 html {
     box-sizing: border-box;
 }
@@ -17,4 +52,24 @@ html {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+body {
+    background-color: var(--c-black);
+}
+
+body *,
+a {
+    color: var(--c-white);
+    text-decoration: none;
+    font-family: var(--f-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--f-title);
 }
