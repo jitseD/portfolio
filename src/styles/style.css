@@ -73,3 +73,18 @@ h5,
 h6 {
     font-family: var(--f-title);
 }
+
+/* nav */
+
+.nav__bar {
+    display: flex;
+    flex-direction: row;
+    gap: var(--s-s);
+    padding: var(--s-s);
+    border-bottom: var(--c-white) 1px solid;
+    background-color: var(--c-black);
+}
+
+.nav__link.active {
+    font-weight: bold;
+}
