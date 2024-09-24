@@ -19,6 +19,8 @@
     --f-emph: "Finder", sans-serif;
 
     /* ----- font sizes ----- */
+    /* 10px to 20px */
+    --f-xs: clamp(0.625rem, 0.4167rem + 0.9259vw, 1.25rem);
     /* 14px to 20px */
     --f-s: clamp(0.875rem, 0.75rem + 0.5556vw, 1.25rem);
     /* 16px to 18px */
@@ -747,6 +749,13 @@ footer * {
     grid-template-columns: 1fr;
 }
 
+.skills--design-skills,
+.skills--branding {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .skill__item {
     display: grid;
     grid-template-columns: 1fr;
@@ -762,6 +771,10 @@ footer * {
     font-size: var(--f-s);
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.skills--tools .skill__name {
+    font-size: var(--f-xs);
 }
 
 @media (hover: none) {
@@ -789,6 +802,11 @@ footer * {
     .skill__wrapper.open .skills {
         display: grid;
         opacity: 1;
+    }
+
+    .skill__wrapper.open .skills--design-skills,
+    .skill__wrapper.open .skills--branding {
+        display: flex;
     }
 }
 
