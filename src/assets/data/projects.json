@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "id": "campaign",
+            "name": "Backpacks Without Limits",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio velit, venenatis vel ante ac, consectetur egestas sem. Donec lacus massa, luctus quis sagittis quis, volutpat eu risus. Sed ut volutpat sem, ac rhoncus lectus.",
+            "tags": [
+                {
+                    "tag": "campaign branding",
+                    "tagType": "branding"
+                },
+                {
+                    "tag": "social media",
+                    "tagType": "branding"
+                },
+                {
+                    "tag": "web design",
+                    "tagType": "design"
+                }
+            ],
+            "tools": [
+                "Figma",
+                "Photoshop"
+            ],
+            "date": "November 2023",
+            "url": "https://www.figma.com/proto/h9KjN734q86iuMv3jcyEMT/Lotus-Bakeries-Campaign?page-id=2%3A5&node-id=100-964&node-type=canvas&viewport=674%2C491%2C0.04&t=l5qd7gsdM3AgfiEN-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=154%3A170",
+            "behanceUrl": null,
+            "highlighted": true
+        },
+        {
+            "id": "conference",
+            "name": "Online Conference",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+            "tags": [
+                {
+                    "tag": "responsive design",
+                    "tagType": "design"
+                }
+            ],
+            "tools": [
+                "Figma",
+                "Photoshop"
+            ],
+            "date": "December 2023",
+            "url": "https://www.figma.com/proto/5vYln2cRUAeJCv9i04jq63/Lotus-Bakeries-Conference...",
+            "behanceUrl": null,
+            "highlighted": true
+        },
+        {
+            "id": "evian",
+            "name": "Evain Social Media",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+            "tags": [
+                {
+                    "tag": "social media",
+                    "tagType": "branding"
+                },
+                {
+                    "tag": "animation",
+                    "tagType": "motion"
+                }
+            ],
+            "tools": [
+                "Figma",
+                "Photoshop",
+                "After Effects"
+            ],
+            "date": "April 2024",
+            "url": null,
+            "behanceUrl": null,
+            "highlighted": true
+        }
+    ]
+}

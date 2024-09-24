@@ -6,7 +6,7 @@ const SkillsetWrapper = ({ type, skills }) => {
 
     return (
         <section className={`skillset__wrapper skillset__wrapper--${type}`}>
-            <h3 className="skillset__title">Part <em className="emph h2">{type + suffix}</em></h3>
+            <h3 className="skillset__title title--wrapped">Part <em className="emph h2">{type + suffix}</em></h3>
             <ul className={`skillset__skills skillset__skills--${type}`}>
                 {Object.entries(skills).map(([category, skillList]) => (
                     <SkillWrapper key={category} category={category} skills={skillList} />

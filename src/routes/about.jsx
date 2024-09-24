@@ -3,6 +3,7 @@ import img1 from "../assets/img/me-1.png";
 import img2 from "../assets/img/me-2.png";
 import SkillsetWrapper from "../components/SkillsetWrapper";
 import skillData from "../assets/data/skills.json";
+import Loader from "../components/Loader";
 
 const About = () => {
     const [data, setData] = useState(null);
@@ -27,9 +28,13 @@ const About = () => {
             </section>
             <section className="skillset">
                 <h2 className="visually-hidden">Skillsett</h2>
-                {Object.entries(data).map(([type, skills]) => (
-                    <SkillsetWrapper key={type} type={type} skills={skills} />
-                ))}
+                {data ? (
+                    Object.entries(data).map(([type, skills]) => (
+                        <SkillsetWrapper key={type} type={type} skills={skills} />
+                    ))
+                ) : (
+                        <Loader message="Loading skills..." />
+                )}
             </section>
         </main>
     )
