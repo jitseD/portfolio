@@ -1,0 +1,41 @@
+{
+    "code": {
+        "languages": [
+            "html",
+            "css",
+            "js",
+            "php"
+        ],
+        "frameworks": [
+            "astro",
+            "react"
+        ],
+        "libraries": [
+            "p5",
+            "gsap",
+            "ml5",
+            "strapi"
+        ],
+        "other": [
+            "arduino"
+        ]
+    },
+    "design": {
+        "tools": [
+            "illustrator",
+            "photoshop",
+            "after effects",
+            "figma"
+        ],
+        "design skills": [
+            "web / app design",
+            "motion design",
+            "storytelling"
+        ],
+        "branding": [
+            "brand identity",
+            "logotypes",
+            "iconography"
+        ]
+    }
+}
