@@ -22,18 +22,24 @@ const RecentWorkItem = ({ work }) => {
     }, [work]);
 
     useEffect(() => {
-        gsap.to(
-            workRef.current,
-            {
-                scrollTrigger: {
-                    trigger: workRef.current,
-                    start: "top 50%",
-                    end: "bottom 50%",
-                    toggleClass: "open",
-                    markers: false,
-                },
-            }
-        );
+        const trigger = gsap.to(workRef.current, {
+            scrollTrigger: {
+                trigger: workRef.current,
+                start: "top 50%",
+                end: "bottom 50%",
+                toggleClass: "open",
+                markers: true,
+            },
+        });
+
+        const timeoutId = setTimeout(() => {
+            ScrollTrigger.refresh();
+        }, 100);
+
+        return () => {
+            clearTimeout(timeoutId);
+            trigger.scrollTrigger?.kill();
+        };
     }, [work]);
 
     return (
