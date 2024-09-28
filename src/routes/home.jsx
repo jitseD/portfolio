@@ -3,13 +3,14 @@ import { useState, useEffect } from "react";
 import img1 from "../assets/img/me-1.png";
 import img2 from "../assets/img/me-2.png";
 import projectsData from "../assets/data/projects.json";
-import RecentWorkItem from "../components/RecentWorkItem";
+import ProjectItem from "../components/ProjectItem";
 import Loader from "../components/Loader";
 
 
 const Home = () => {
     const [data, setData] = useState(null);
     useEffect(() => setData(projectsData), []);
+    const highlightedProjects = data ? data.projects.filter(project => project.highlighted) : [];
 
     return (
         <main className="main main--home">
@@ -32,7 +33,7 @@ const Home = () => {
                     <img className="intro__img intro__img--flipped" src={img2} alt="Jitse Dekeyser" />
                     <img className="intro__img" src={img1} alt="Jitse Dekeyser" />
                 </div>
-                <Link className="intro__button button button--left" to={`${import.meta.env.BASE_URL}about`}>
+                <Link className="intro__button button" to={`${import.meta.env.BASE_URL}about`}>
                     <p>more about me</p>
                     <svg width="57" height="30" viewBox="0 0 57 30" fill="none">
                         <path d="M55.9991 14.9996L0 14.9999M55.9991 14.9996L41.9995 1M55.9991 14.9996L41.9998 29" stroke="#F2F2F2" />
@@ -41,16 +42,16 @@ const Home = () => {
             </section>
             <section className="recent">
                 <h2 className="recent__title title--wrapped">Recent <span className="emph">Works</span></h2>
-                <ul className="recent__works">
+                <ul className="recent__projects">
                     {data ? (
-                        data.projects.map((work) => (
-                            <RecentWorkItem key={work.id} work={work} />
+                        highlightedProjects.map((project, index) => (
+                            <ProjectItem key={project.id} project={project} index={index} />
                         ))
                     ) : (
-                        <Loader message="Loading recent works..." />
+                        <Loader message="Loading recent projects..." />
                     )}
                 </ul>
-                <Link className="recent__button button button--left" to={`${import.meta.env.BASE_URL}projects`}>
+                <Link className="recent__button button" to={`${import.meta.env.BASE_URL}projects`}>
                     <p>more projects</p>
                     <svg width="57" height="30" viewBox="0 0 57 30" fill="none">
                         <path d="M55.9991 14.9996L0 14.9999M55.9991 14.9996L41.9995 1M55.9991 14.9996L41.9998 29" stroke="#F2F2F2" />
