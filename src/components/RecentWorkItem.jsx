@@ -1,25 +1,17 @@
 import PropTypes from "prop-types";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { getMediaObject } from "../utils/loadMedia";
+import Media from "./Media";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
 const RecentWorkItem = ({ work }) => {
-    const [coverImgPath, setCoverImgPath] = useState(null);
-    const [overviewImgPath, setOverviewImgPath] = useState(null);
     const workRef = useRef(null);
 
-    useEffect(() => {
-        import(`../assets/img/projects/${work.id}-cover.png`)
-            .then((module) => setCoverImgPath(module.default))
-            .catch(() => setCoverImgPath(null));
-
-        import(`../assets/img/projects/${work.id}-overview.png`)
-            .then((module) => setOverviewImgPath(module.default))
-            .catch(() => setOverviewImgPath(null));
-    }, [work]);
+    const media = getMediaObject(work.id);
 
     useEffect(() => {
         const trigger = gsap.to(workRef.current, {
@@ -28,7 +20,7 @@ const RecentWorkItem = ({ work }) => {
                 start: "top 50%",
                 end: "bottom 50%",
                 toggleClass: "open",
-                markers: true,
+                markers: false,
             },
         });
 
@@ -43,12 +35,14 @@ const RecentWorkItem = ({ work }) => {
     }, [work]);
 
     return (
-        <li className="recent__work" ref={workRef}>
+        <li className="work__wrapper" ref={workRef}>
+            <Link className="recent__work" to={`${import.meta.env.BASE_URL}projects/${work.id}`}>
             <h3 className="work__title emph">{work.name}</h3>
             <div className="work__imgs">
-                <img className="work__img work__img--cover" src={coverImgPath} alt={`${work.id} cover`} />
-                <img className="work__img work__img--overview" src={overviewImgPath} alt={`${work.id} overview`} />
+                <Media className="work__img work__img--cover" media={media.cover} />
+                <Media className="work__img work__img--overview" media={media.overview} />
             </div>
+            </Link>
         </li>
     )
 }

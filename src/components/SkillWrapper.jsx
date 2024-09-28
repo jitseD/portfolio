@@ -3,9 +3,7 @@ import { useState } from "react";
 import SkillItem from "./SkillItem";
 
 const SkillWrapper = ({ category, skills }) => {
-    const showImages = category !== "design skills" && category !== "branding";
     const [isOpen, setIsOpen] = useState(false);
-
     const handleClick = () => setIsOpen(prev => !prev);
 
     return (
@@ -18,7 +16,7 @@ const SkillWrapper = ({ category, skills }) => {
             </div>
             <ul className={`skills skills--${category.replace(/\s+/g, '-')}`}>
                 {skills.map((skill, index) => (
-                    <SkillItem key={index} skill={skill} showImage={showImages} />
+                    <SkillItem key={index} skill={skill} />
                 ))}
             </ul>
         </li>

@@ -1,12 +1,14 @@
-import './styles/reset.css'
-import './styles/style.css'
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import './styles/reset.css';
+import './styles/style.css';
+import './utils/script.js';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root';
 import Home from './routes/home';
 import Projects from './routes/projects';
+import ProjectDetail from './routes/projectDetail';
 import About from './routes/about';
 import Contact from './routes/contact';
 
@@ -23,6 +25,11 @@ const router = createBrowserRouter([
             {
                 path: `/projects`,
                 element: <Projects />,
+            },
+            {
+                path: `/projects/:id`,
+                element: <ProjectDetail />,
+                loader: ProjectDetail.loader,
             },
             {
                 path: `/about`,

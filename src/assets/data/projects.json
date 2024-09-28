@@ -2,13 +2,9 @@
     "projects": [
         {
             "id": "campaign",
-            "name": "Backpacks Without Limits",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio velit, venenatis vel ante ac, consectetur egestas sem. Donec lacus massa, luctus quis sagittis quis, volutpat eu risus. Sed ut volutpat sem, ac rhoncus lectus.",
+            "name": "Back\u00ADpacks Without Limits",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
             "tags": [
-                {
-                    "tag": "campaign branding",
-                    "tagType": "branding"
-                },
                 {
                     "tag": "social media",
                     "tagType": "branding"
@@ -25,11 +21,12 @@
             "date": "November 2023",
             "url": "https://www.figma.com/proto/h9KjN734q86iuMv3jcyEMT/Lotus-Bakeries-Campaign?page-id=2%3A5&node-id=100-964&node-type=canvas&viewport=674%2C491%2C0.04&t=l5qd7gsdM3AgfiEN-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=154%3A170",
             "behanceUrl": null,
-            "highlighted": true
+            "highlighted": true,
+            "media": []
         },
         {
             "id": "conference",
-            "name": "Online Conference",
+            "name": "Online Confer\u00ADence",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
             "tags": [
                 {
@@ -44,12 +41,65 @@
             "date": "December 2023",
             "url": "https://www.figma.com/proto/5vYln2cRUAeJCv9i04jq63/Lotus-Bakeries-Conference...",
             "behanceUrl": null,
-            "highlighted": true
+            "highlighted": true,
+            "media": []
+        },
+        {
+            "id": "kickstarter",
+            "name": "Kick\u00ADstarter Promo Video",
+            "description": "The goal of the project was to create a short promo video for a kickstarter campaign. The video highlights the product's functionality and its engaging customer experience. Get ready to discover the “Make Your Own Pocket Knife Kit” Kickstarter.",
+            "tags": [
+                {
+                    "tag": "promo video",
+                    "tagType": "motion"
+                }
+            ],
+            "tools": [
+                "After Effects",
+                "Audition",
+                "Photoshop"
+            ],
+            "date": "March 2024",
+            "url": "https://vimeo.com/1013344283",
+            "behanceUrl": null,
+            "highlighted": true,
+            "media": [
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/kickstarter/result-1",
+                    "fileExtension": "png",
+                    "alt": "snapshot 1"
+                },
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/kickstarter/result-2",
+                    "fileExtension": "png",
+                    "alt": "snapshot 2"
+                },
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/kickstarter/result-3",
+                    "fileExtension": "png",
+                    "alt": "snapshot 3"
+                },
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/kickstarter/result-4",
+                    "fileExtension": "png",
+                    "alt": "snapshot 4"
+                },
+                {
+                    "mediaType": "video",
+                    "filePath": "projects/kickstarter/video",
+                    "fileExtension": "mp4",
+                    "alt": "promo video"
+                }
+            ]
         },
         {
             "id": "evian",
             "name": "Evain Social Media",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+            "description": "The project focused on designing an Instagram story for Evian, the official sponsor of the 2024 Paris Olympics. The concept visually combined sports and premium hydration, maintaining brand consistency while showcasing Evian's role in keeping athletes refreshed.",
             "tags": [
                 {
                     "tag": "social media",
@@ -68,7 +118,39 @@
             "date": "April 2024",
             "url": null,
             "behanceUrl": null,
-            "highlighted": true
+            "highlighted": true,
+            "media": [
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/evian/result-1",
+                    "fileExtension": "png",
+                    "alt": "instagram story 1"
+                },
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/evian/result-2",
+                    "fileExtension": "png",
+                    "alt": "instagram story 2"
+                },
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/evian/result-3",
+                    "fileExtension": "png",
+                    "alt": "instagram story 3"
+                },
+                {
+                    "mediaType": "img",
+                    "filePath": "projects/evian/result-4",
+                    "fileExtension": "png",
+                    "alt": "overview of instagram stories"
+                },
+                {
+                    "mediaType": "video",
+                    "filePath": "projects/evian/video",
+                    "fileExtension": "mp4",
+                    "alt": "instagram story video"
+                }
+            ]
         }
     ]
 }

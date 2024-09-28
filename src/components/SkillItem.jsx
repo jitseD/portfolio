@@ -1,31 +1,17 @@
 import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
+import Media from "./Media";
 
-
-const SkillItem = ({ skill, showImage }) => {
-    const [skillImgPath, setSkillImgPath] = useState(null);
-
-    useEffect(() => {
-        if (showImage) {
-            const skillKey = skill.toLowerCase().replace(/\s+/g, '-');
-
-            import(`../assets/img/skills/${skillKey}.svg`)
-                .then((module) => setSkillImgPath(module.default))
-                .catch(() => setSkillImgPath(null));
-        }
-    }, [skill, showImage]);
-
+const SkillItem = ({ skill }) => {
     return (
         <li className="skill__item">
-            {skillImgPath && <img className="skill__img" src={skillImgPath} alt={skill} />}
-            <p className="skill__name">{skill}</p>
+            {skill.mediaType && <Media className="skill__img" media={skill} />}
+            <p className="skill__name">{skill.name}</p>
         </li>
     )
 }
 
 SkillItem.propTypes = {
-    skill: PropTypes.string.isRequired,
-    showImage: PropTypes.bool.isRequired
+    skill: PropTypes.object.isRequired,
 };
 
 export default SkillItem

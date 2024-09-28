@@ -1,41 +1,149 @@
 {
     "code": {
         "languages": [
-            "html",
-            "css",
-            "js",
-            "php"
+            {
+                "name": "html",
+                "mediaType": "img",
+                "filePath": "skills/html",
+                "fileExtension": "svg",
+                "alt": "html"
+            },
+            {
+                "name": "css",
+                "mediaType": "img",
+                "filePath": "skills/css",
+                "fileExtension": "svg",
+                "alt": "css"
+            },
+            {
+                "name": "js",
+                "mediaType": "img",
+                "filePath": "skills/js",
+                "fileExtension": "svg",
+                "alt": "js"
+            },
+            {
+                "name": "php",
+                "mediaType": "img",
+                "filePath": "skills/php",
+                "fileExtension": "svg",
+                "alt": "php"
+            }
         ],
         "frameworks": [
-            "astro",
-            "react"
+            {
+                "name": "astro",
+                "mediaType": "img",
+                "filePath": "skills/astro",
+                "fileExtension": "svg",
+                "alt": "astro"
+            },
+            {
+                "name": "react",
+                "mediaType": "img",
+                "filePath": "skills/react",
+                "fileExtension": "svg",
+                "alt": "react"
+            }
         ],
         "libraries": [
-            "p5",
-            "gsap",
-            "ml5",
-            "strapi"
+            {
+                "name": "p5",
+                "mediaType": "img",
+                "filePath": "skills/p5",
+                "fileExtension": "svg",
+                "alt": "p5"
+            },
+            {
+                "name": "gsap",
+                "mediaType": "img",
+                "filePath": "skills/gsap",
+                "fileExtension": "svg",
+                "alt": "gsap"
+            },
+            {
+                "name": "ml5",
+                "mediaType": "img",
+                "filePath": "skills/ml5",
+                "fileExtension": "svg",
+                "alt": "ml5"
+            },
+            {
+                "name": "strapi",
+                "mediaType": "img",
+                "filePath": "skills/strapi",
+                "fileExtension": "svg",
+                "alt": "strapi"
+            }
         ],
         "other": [
-            "arduino"
+            {
+                "name": "arduino",
+                "mediaType": "img",
+                "filePath": "skills/arduino",
+                "fileExtension": "svg",
+                "alt": "arduino"
+            }
         ]
     },
     "design": {
         "tools": [
-            "illustrator",
-            "photoshop",
-            "after effects",
-            "figma"
+            {
+                "name": "illustrator",
+                "mediaType": "img",
+                "filePath": "skills/illustrator",
+                "fileExtension": "svg",
+                "alt": "illustrator"
+            },
+            {
+                "name": "photoshop",
+                "mediaType": "img",
+                "filePath": "skills/photoshop",
+                "fileExtension": "svg",
+                "alt": "photoshop"
+            },
+            {
+                "name": "after effects",
+                "mediaType": "img",
+                "filePath": "skills/after-effects",
+                "fileExtension": "svg",
+                "alt": "after effects"
+            },
+            {
+                "name": "figma",
+                "mediaType": "img",
+                "filePath": "skills/figma",
+                "fileExtension": "svg",
+                "alt": "figma"
+            }
         ],
         "design skills": [
-            "web / app design",
-            "motion design",
-            "storytelling"
+            {
+                "mediaType": null,
+                "name": "web / app design"
+            },
+            {
+                "mediaType": null,
+                "name": "motion design"
+            },
+            {
+                "mediaType": null,
+                "name": "storytelling"
+            }
         ],
         "branding": [
-            "brand identity",
-            "logotypes",
-            "iconography"
+            {
+                "mediaType": null,
+                "name": "brand identity"
+            },
+            {
+                "mediaType": null,
+                "name": "logotypes"
+            },
+            {
+                "mediaType": null,
+                "name": "iconography"
+            }
         ]
     }
 }
