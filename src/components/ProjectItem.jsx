@@ -25,9 +25,7 @@ const ProjectItem = ({ project, index, first }) => {
             },
         });
 
-        const timeoutId = setTimeout(() => {
-            ScrollTrigger.refresh();
-        }, 100);
+        const timeoutId = setTimeout(() => ScrollTrigger.refresh(), 100);
 
         return () => {
             clearTimeout(timeoutId);

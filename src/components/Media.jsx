@@ -1,22 +1,15 @@
 import PropTypes from "prop-types";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { loadMedia } from '../utils/loadMedia';
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const Media = ({ className, media }) => {
-    // const [mediaImgPath, setMediaImgPath] = useState(null);
-
-    // useEffect(() => {
-    //     const mediaLoader = async () => {
-
-    //     const mediaSrc = await loadMedia(`../assets/img`, media);
-    //     setMediaImgPath(mediaSrc);
-    //     };
-
-    //     if (media.filePath) mediaLoader();
-    //     else setMediaImgPath(null)
-    // }, [media]);
-
     const [mediaImgPath, setMediaImgPath] = useState(null);
+    const [controlsVisible, setControlsVisible] = useState(false);
+    const videoRef = useRef(null);
 
     useEffect(() => {
         const loadMediaAsync = async () => {
@@ -31,8 +24,54 @@ const Media = ({ className, media }) => {
         loadMediaAsync();
     }, [media]);
 
-    if (media.mediaType == "img") return <img className={className} src={mediaImgPath} alt={media.alt} />
-    if (media.mediaType == "video") return <video className={className} src={mediaImgPath} alt={media.alt} loop autoPlay playsInline muted controls />
+    useEffect(() => {
+        if (media.mediaType === "img") return
+
+        const trigger = gsap.to(videoRef.current, {
+            scrollTrigger: {
+                trigger: videoRef.current,
+                start: "top 90%",
+                end: "bottom 10%",
+                onEnter: () => playVideo(),
+                onLeave: () => pauseVideo(),
+                onEnterBack: () => playVideo(),
+                onLeaveBack: () => pauseVideo()
+            }
+        })
+        const timeoutId = setTimeout(() => ScrollTrigger.refresh(), 100);
+
+        return () => {
+            clearTimeout(timeoutId);
+            trigger.scrollTrigger?.kill();
+        };
+    }, [media]);
+
+    useEffect(() => {
+        if (!controlsVisible) {
+            const timeoutId = setTimeout(() => setControlsVisible(true), 500);
+
+            return () => clearTimeout(timeoutId);
+        }
+    }, [controlsVisible])
+
+    const playVideo = () => {
+        videoRef.current.play()
+        setControlsVisible(false)
+    }
+
+    const pauseVideo = () => {
+        videoRef.current.pause()
+        setControlsVisible(false)
+    }
+
+    const handleVideoClick = () => setControlsVisible(true);
+
+    return media.mediaType === "img" ? (
+        <img className={className} src={mediaImgPath} alt={media.alt} />
+    ) : media.mediaType === "video" && (
+        <video className={className} src={mediaImgPath} alt={media.alt} ref={videoRef}
+            loop playsInline controls={controlsVisible ? true : false} onClick={handleVideoClick} />
+    )
 }
 
 Media.propTypes = {
