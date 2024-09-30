@@ -9,7 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const ProjectItem = ({ project, index }) => {
+const ProjectItem = ({ project, index, first }) => {
     const projectRef = useRef(null);
     const media = getMediaObject(project.id);
 
@@ -46,7 +46,7 @@ const ProjectItem = ({ project, index }) => {
     })
 
     return (
-        <li className={`recent__project ${index % 2 == 0 ? `left` : `right`}`} ref={projectRef}>
+        <li className={`project ${index % 2 == 0 ? `left` : `right`} ${first && `open`}`} ref={projectRef}>
             <Link className="project__wrapper hover__link" to={`${import.meta.env.BASE_URL}projects/${project.id}`}>
                 <div className="project__info">
                     <h3 className="project__title emph">{project.name}</h3>
@@ -86,7 +86,8 @@ const ProjectItem = ({ project, index }) => {
 
 ProjectItem.propTypes = {
     project: PropTypes.object.isRequired,
-    index: PropTypes.number.isRequired
+    index: PropTypes.number.isRequired,
+    first: PropTypes.bool
 };
 
 
