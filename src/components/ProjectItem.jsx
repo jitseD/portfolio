@@ -3,6 +3,7 @@ import React from 'react';
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { getMediaObject } from "../utils/loadMedia";
+import { cursorHover } from "../utils/cursorHover";
 import Media from "./Media";
 
 import gsap from "gsap";
@@ -34,20 +35,11 @@ const ProjectItem = ({ project, index, first }) => {
         };
     }, [project]);
 
-    useEffect(() => {
-        const $links = document.querySelectorAll(`.project__wrapper`);
-        const $cursor = document.querySelector(`.cursor`);
-
-        const handleEnterLink = () => $cursor.classList.add(`hover`);
-        const handleLeaveLink = () => $cursor.classList.remove(`hover`);
-
-        $links.forEach($link => $link.addEventListener(`mouseenter`, handleEnterLink));
-        $links.forEach($link => $link.addEventListener(`mouseleave`, handleLeaveLink));
-    })
+    useEffect(() => cursorHover(`arrow`));
 
     return (
         <li className={`project ${index % 2 == 0 ? `left` : `right`} ${first && `open`}`} ref={projectRef}>
-            <Link className="project__wrapper hover__link" to={`${import.meta.env.BASE_URL}projects/${project.id}`}>
+            <Link className="project__wrapper hover--arrow" to={`${import.meta.env.BASE_URL}projects/${project.id}`}>
                 <div className="project__info">
                     <h3 className="project__title emph">{project.name}</h3>
                     {project.tags &&

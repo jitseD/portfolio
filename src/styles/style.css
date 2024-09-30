@@ -167,7 +167,7 @@ main {
     margin-block-end: calc(3 * var(--s-s) + 3 * var(--f-s) + 4 * var(--s-xs));
 }
 
-main,
+html,
 a,
 label,
 input,
@@ -240,12 +240,16 @@ img {
     transition: var(--t-fast) fill;
 }
 
-.cursor.hover {
+.cursor.hover--nav {
+    width: 2rem;
+}
+
+.cursor.hover--arrow {
     mix-blend-mode: unset;
     width: 3rem;
 }
 
-.cursor.hover .cursor__circle {
+.cursor.hover--arrow .cursor__circle {
     fill: var(--c-black);
 }
 
@@ -302,7 +306,7 @@ main>section {
 
 /* ---------- nav ---------- */
 
-.nav__bar {
+.nav {
     display: flex;
     flex-direction: row;
     gap: var(--s-s);
@@ -722,7 +726,7 @@ footer * {
 .main--projects {
     display: flex;
     flex-direction: column;
-    gap: var(--s-l);
+    gap: var(--s-xl);
     padding-block-start: var(--s-xl);
 }
 
@@ -1305,4 +1309,9 @@ footer * {
     background-color: var(--c-white);
     color: var(--c-black);
     border-color: var(--c-black);
+}
+
+.form__sbumit:hover {
+    background-color: var(--c-black);
+    color: var(--c-white);
 }

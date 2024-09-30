@@ -34,7 +34,7 @@ const Home = () => {
                     <img className="intro__img intro__img--flipped" src={img2} alt="Jitse Dekeyser" />
                     <img className="intro__img" src={img1} alt="Jitse Dekeyser" />
                 </div>
-                <Link className="intro__button button hover__link" to={`${import.meta.env.BASE_URL}about`}>
+                <Link className="intro__button button hover--arrow" to={`${import.meta.env.BASE_URL}about`}>
                     <p>more about me</p>
                     <svg width="57" height="30" viewBox="0 0 57 30" fill="none">
                         <path d="M55.9991 14.9996L0 14.9999M55.9991 14.9996L41.9995 1M55.9991 14.9996L41.9998 29" stroke="#F2F2F2" />
@@ -52,7 +52,7 @@ const Home = () => {
                         <Loader message="Loading recent projects..." />
                     )}
                 </ul>
-                <Link className="recent__button button hover__link" to={`${import.meta.env.BASE_URL}projects`}>
+                <Link className="recent__button button hover--arrow" to={`${import.meta.env.BASE_URL}projects`}>
                     <p>more projects</p>
                     <svg width="57" height="30" viewBox="0 0 57 30" fill="none">
                         <path d="M55.9991 14.9996L0 14.9999M55.9991 14.9996L41.9995 1M55.9991 14.9996L41.9998 29" stroke="#F2F2F2" />

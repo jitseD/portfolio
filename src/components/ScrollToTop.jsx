@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { cursorHover } from "../utils/cursorHover";
+
 
 const ScrollToTop = (props) => {
     const location = useLocation();
@@ -8,14 +10,9 @@ const ScrollToTop = (props) => {
         window.scrollTo({ top: 0, left: 0 }); // behavior: 'smooth'
 
         const $cursor = document.querySelector(`.cursor`);
-        const $links = document.querySelectorAll(`.hover__link`);
-        
-        const handleEnterLink = () => $cursor.classList.add(`hover`);
-        const handleLeaveLink = () => $cursor.classList.remove(`hover`);
-        
-        $cursor.classList.remove(`hover`);
-        $links.forEach($link => $link.addEventListener(`mouseenter`, handleEnterLink));
-        $links.forEach($link => $link.addEventListener(`mouseleave`, handleLeaveLink));
+        $cursor.classList.remove(`hover--arrow`, `hover--nav`);
+        cursorHover(`arrow`);
+        cursorHover(`nav`);
     }, [location]);
 
     return <>
