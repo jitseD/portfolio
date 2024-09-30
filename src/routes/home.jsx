@@ -5,7 +5,7 @@ import img2 from "../assets/img/me-2.png";
 import projectsData from "../assets/data/projects.json";
 import ProjectItem from "../components/ProjectItem";
 import Loader from "../components/Loader";
-
+import ContactSection from "../components/ContactSection";
 
 const Home = () => {
     const [projects, setProjects] = useState(null);
@@ -59,6 +59,7 @@ const Home = () => {
                     </svg>
                 </Link>
             </section>
+            <ContactSection/>
         </main >
     )
 }

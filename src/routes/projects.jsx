@@ -3,6 +3,7 @@ import projectsData from "../assets/data/projects.json";
 import ProjectItem from "../components/ProjectItem";
 import Loader from "../components/Loader";
 import FilterTag from "../components/FilterTag";
+import ContactSection from "../components/ContactSection";
 
 const Projects = () => {
     const [projects, setProjects] = useState(null);
@@ -61,6 +62,7 @@ const Projects = () => {
                     )}
                 </ul>
             </section>
+            <ContactSection/>
         </main>
     )
 }

@@ -4,6 +4,7 @@ import img2 from "../assets/img/me-2.png";
 import SkillsetWrapper from "../components/SkillsetWrapper";
 import skillData from "../assets/data/skills.json";
 import Loader from "../components/Loader";
+import ContactSection from "../components/ContactSection";
 
 const About = () => {
     const [data, setData] = useState(null);
@@ -33,9 +34,10 @@ const About = () => {
                         <SkillsetWrapper key={type} type={type} skills={skills} />
                     ))
                 ) : (
-                        <Loader message="Loading skills..." />
+                    <Loader message="Loading skills..." />
                 )}
             </section>
+            <ContactSection />
         </main>
     )
 }
