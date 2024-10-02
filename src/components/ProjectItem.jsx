@@ -10,17 +10,27 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const ProjectItem = ({ project, index, first }) => {
+const ProjectItem = ({ project, index, totalProjects }) => {
     const projectRef = useRef(null);
     const media = getMediaObject(project.id);
+    const firstProject = index == 0;
+    const lastProject = index == totalProjects - 1;
 
     useEffect(() => {
-        const trigger = gsap.to(projectRef.current, {
+        const $element = projectRef.current;
+
+        const openProject = () => $element.classList.add("open");
+        const closeProject = () => $element.classList.remove("open");
+
+        const trigger = gsap.to($element, {
             scrollTrigger: {
-                trigger: projectRef.current,
+                trigger: $element,
                 start: "top 50%",
                 end: "bottom 50%",
-                toggleClass: "open",
+                onEnter: () => { if (!firstProject) openProject() },
+                onLeave: () => { if (!lastProject) closeProject() },
+                onEnterBack: () => { openProject() },
+                onLeaveBack: () => { if (!firstProject) closeProject() },
                 markers: false,
             },
         });
@@ -31,12 +41,13 @@ const ProjectItem = ({ project, index, first }) => {
             clearTimeout(timeoutId);
             trigger.scrollTrigger?.kill();
         };
-    }, [project]);
+    }, [firstProject, lastProject]);
+
 
     useEffect(() => cursorHover(`arrow`));
 
     return (
-        <li className={`project ${index % 2 == 0 ? `left` : `right`} ${first && `open`}`} ref={projectRef}>
+        <li className={`project ${index % 2 == 0 ? `left` : `right`} ${firstProject && `open`}`} ref={projectRef}>
             <Link className="project__wrapper hover--arrow" to={`${import.meta.env.BASE_URL}projects/${project.id}`}>
                 <div className="project__info">
                     <h3 className="project__title emph">{project.name}</h3>
@@ -77,7 +88,7 @@ const ProjectItem = ({ project, index, first }) => {
 ProjectItem.propTypes = {
     project: PropTypes.object.isRequired,
     index: PropTypes.number.isRequired,
-    first: PropTypes.bool
+    totalProjects: PropTypes.number.isRequired
 };
 
 

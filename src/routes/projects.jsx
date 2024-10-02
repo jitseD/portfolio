@@ -55,7 +55,7 @@ const Projects = () => {
                 <ul className="projects__list">
                     {projects ? (
                         projects.map((project, index) => (
-                            <ProjectItem key={project.id} project={project} index={index} first={index === 0} />
+                            <ProjectItem key={project.id} project={project} index={index} totalProjects={projects.length} />
                         ))
                     ) : (
                         <Loader message={`Loading ${filter} projects...`} />

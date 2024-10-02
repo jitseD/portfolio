@@ -46,7 +46,7 @@ const Home = () => {
                 <ul className="recent__projects">
                     {highlightedProjects ? (
                         highlightedProjects.map((project, index) => (
-                            <ProjectItem key={project.id} project={project} index={index} />
+                            <ProjectItem key={project.id} project={project} index={index} totalProjects={highlightedProjects.length} />
                         ))
                     ) : (
                         <Loader message="Loading recent projects..." />
