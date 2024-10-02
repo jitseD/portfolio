@@ -31,8 +31,8 @@ const Home = () => {
                 <em className="intro__hey hey emph outline">Hey</em>
                 <p className="intro__text">I&#39;m a student in <strong>Digital Design and Development</strong> at Howest in Belgium, currently on exchange in Norway, studying IT at USN. I love combining creativity and technology to create beautiful and innovative projects.</p>
                 <div className="intro__imgs stacked__imgs">
-                    <img className="intro__img intro__img--flipped" src={img2} alt="Jitse Dekeyser" />
-                    <img className="intro__img" src={img1} alt="Jitse Dekeyser" />
+                    <img className="intro__img" src={img2} alt="Jitse Dekeyser" />
+                    <img className="intro__img intro__img--flipped" src={img1} alt="Jitse Dekeyser" />
                 </div>
                 <Link className="intro__button button hover--arrow" to={`${import.meta.env.BASE_URL}about`}>
                     <p>more about me</p>
