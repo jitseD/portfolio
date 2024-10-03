@@ -31,7 +31,7 @@ const ContactForm = () => {
                 <textarea className="form__input" name="message" placeholder="Hellow" required />
                 <span className="form__label">Your message *</span>
             </label>
-            <input className="form__sbumit button" type="submit" value="Send" />
+            <input className="form__submit button" type="submit" value="Send" />
         </form>
     );
 };
