@@ -1,13 +1,12 @@
 import PropTypes from "prop-types";
-// import { useState } from "react";
 import SkillItem from "./SkillItem";
+import { useEffect } from "react";
+import { cursorHover } from "../utils/cursorHover";
 
 const SkillWrapper = ({ category, skills, currentSkill, onClick }) => {
-    // const [isOpen, setIsOpen] = useState(false);
-    // const handleClick = () => setIsOpen(prev => !prev);
-
+    useEffect(() => cursorHover(`circle`))
     return (
-        <li className={`skill__wrapper skill__wrapper--${category.replace(/\s+/g, '-')} ${currentSkill == category ? `open` : ``}`} onClick={() => onClick(category)}>
+        <li className={`skill__wrapper skill__wrapper--${category.replace(/\s+/g, '-')} ${currentSkill == category ? `open` : ``} hover--circle`} onClick={() => onClick(category)}>
             <div className="category__wrapper">
                 <h4 className="skill__category emph">{category}</h4>
                 <svg className="toggle__img" width="16" height="9" viewBox="0 0 16 9" fill="none">

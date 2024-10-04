@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { cursorHover } from "../utils/cursorHover";
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
@@ -17,6 +18,8 @@ const ContactForm = () => {
             );
     };
 
+    useEffect(()=> cursorHover(`send`))
+
     return (
         <form className="form" ref={form} onSubmit={sendEmail}>
             <label className="label__wrapper">
@@ -31,7 +34,12 @@ const ContactForm = () => {
                 <textarea className="form__input" name="message" placeholder="Hellow" required />
                 <span className="form__label">Your message *</span>
             </label>
-            <input className="form__submit button" type="submit" value="Send" />
+            <div className="form__submit button hover--send">
+                <input className="form__button" type="submit" value="Send" />
+                <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.0002 14.0003L2.00019 1.5L8.99995 14M30.0002 14.0003L8.99995 14M30.0002 14.0003L2 26.5L8.99995 14" stroke="#F2F2F2" />
+                </svg>
+            </div>
         </form>
     );
 };

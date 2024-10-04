@@ -10,9 +10,12 @@ const ScrollToTop = (props) => {
         window.scrollTo({ top: 0, left: 0 }); // behavior: 'smooth'
 
         const $cursor = document.querySelector(`.cursor`);
-        $cursor.classList.remove(`hover--arrow`, `hover--nav`);
+        $cursor.classList.remove(`hover--arrow`, `hover--back`, `hover--send`, `hover--external`, `hover--circle`);
         cursorHover(`arrow`);
-        cursorHover(`nav`);
+        cursorHover(`back`);
+        cursorHover(`send`);
+        cursorHover(`external`);
+        cursorHover(`circle`);
     }, [location]);
 
     return <>

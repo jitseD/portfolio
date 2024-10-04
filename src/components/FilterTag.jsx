@@ -1,8 +1,12 @@
 import PropTypes from "prop-types"
+import { useEffect } from "react";
+import { cursorHover } from "../utils/cursorHover";
 
 const FilterTag = ({ name, filter, onClick }) => {
+    useEffect(() => cursorHover(`circle`));
+
     return (
-        <li className={`filter__tag ${name == filter && `active`}`} onClick={onClick}>{name}</li>
+        <li className={`filter__tag ${name == filter && `active`} hover--circle`} onClick={onClick}>{name}</li>
     )
 }
 

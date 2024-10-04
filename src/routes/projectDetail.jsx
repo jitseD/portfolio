@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useLocation } from "react-router-dom";
 import { getMediaObject } from "../utils/loadMedia";
 import projectsData from "../assets/data/projects.json";
 import Media from "../components/Media";
@@ -9,6 +9,10 @@ const loader = async ({ params }) => {
 }
 
 const ProjectDetail = () => {
+    const location = useLocation();
+    const params = new URLSearchParams(location.search);
+    const from = params.get("from") || `${import.meta.env.BASE_URL}projects`;
+
     const { project } = useLoaderData();
 
     const projectIndex = projectsData.projects.findIndex(proj => proj.id === project.id);
@@ -21,7 +25,7 @@ const ProjectDetail = () => {
 
     return (
         <main className="main main--detail">
-            <Link className="detail__nav" to={`${import.meta.env.BASE_URL}projects`}>
+            <Link className="detail__nav hover--back" to={from}>
                 <svg width="10" height="17" viewBox="0 0 10 17" fill="none">
                     <path d="M8.99976 0.5L0.999979 8.49978L8.99958 16.5" stroke="#F2F2F2" />
                 </svg>
@@ -43,7 +47,7 @@ const ProjectDetail = () => {
                 <p className="detail__description">{project.description}</p>
                 {
                     project.url &&
-                    <a className="detail__website button" href={project.url} target="_blank">
+                    <a className="detail__website button hover--external" href={project.url} target="_blank">
                         <p>view project</p>
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
                             <path d="M28.999 1L7.99957 21.9997M28.999 1H18.4994M28.999 1L28.9996 11.5M11.4996 4.5H0.999573L1.00066 29H25.4996V18.5" stroke="#F2F2F2" />
@@ -61,7 +65,7 @@ const ProjectDetail = () => {
                 {project.behanceUrl && (
                     <div className="behance__wrapper">
                         <p>Learn more about the project on Behance</p>
-                        <a className="button" href={project.behanceUrl} target="_blank">
+                        <a className="button hover--external" href={project.behanceUrl} target="_blank">
                             <p>go to behance</p>
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <path d="M28.999 1L7.99957 21.9997M28.999 1H18.4994M28.999 1L28.9996 11.5M11.4996 4.5H0.999573L1.00066 29H25.4996V18.5" stroke="#F2F2F2" />
@@ -74,13 +78,13 @@ const ProjectDetail = () => {
                 <h2 className="more__title outline emph">More</h2>
                 <ul className="more__projects">
                     <li className="more__project">
-                        <Link className="stacked__imgs" to={`${import.meta.env.BASE_URL}projects/${prevProject.id}`}>
+                        <Link className="stacked__imgs hover--back" to={`${import.meta.env.BASE_URL}projects/${prevProject.id}`}>
                             <Media className="more__img more__img--cover" media={prevMedia.cover} />
                             <Media className="more__img more__img--overview" media={prevMedia.overview} />
                         </Link>
                     </li>
                     <li className="more__project">
-                        <Link className="stacked__imgs" to={`${import.meta.env.BASE_URL}projects/${nextProject.id}`}>
+                        <Link className="stacked__imgs hover--arrow" to={`${import.meta.env.BASE_URL}projects/${nextProject.id}`}>
                             <Media className="more__img more__img--cover" media={nextMedia.cover} />
                             <Media className="more__img more__img--overview" media={nextMedia.overview} />
                         </Link>

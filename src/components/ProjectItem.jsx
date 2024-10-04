@@ -48,7 +48,7 @@ const ProjectItem = ({ project, index, totalProjects }) => {
 
     return (
         <li className={`project ${index % 2 == 0 ? `left` : `right`} ${firstProject && `open`}`} ref={projectRef}>
-            <Link className="project__wrapper hover--arrow" to={`${import.meta.env.BASE_URL}projects/${project.id}`}>
+            <Link className="project__wrapper hover--arrow" to={`${import.meta.env.BASE_URL}projects/${project.id}?from=${encodeURIComponent(location.pathname)}`}>
                 <div className="project__info">
                     <h3 className="project__title emph">{project.name}</h3>
                     {project.tags &&

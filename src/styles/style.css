@@ -256,20 +256,56 @@ img {
 
 .cursor__circle {
     fill: var(--c-white);
-    transition: var(--t-fast) fill;
+    transition: var(--t-fast) fill, var(--t-fast) stroke;
 }
 
-.cursor.hover--nav {
+.cursor.hover--circle {
     width: 2rem;
 }
 
-.cursor.hover--arrow {
+.cursor__arrow,
+.cursor__back,
+.cursor__send,
+.cursor__external {
+    opacity: 0;
+    transition: var(--t-fast) opacity;
+    fill: transparent;
+}
+
+.cursor.hover--arrow,
+.cursor.hover--back,
+.cursor.hover--send,
+.cursor.hover--external {
     mix-blend-mode: unset;
     width: 3rem;
 }
 
-.cursor.hover--arrow .cursor__circle {
+.cursor.hover--arrow .cursor__arrow {
+    opacity: 1;
+}
+
+.cursor.hover--back .cursor__back {
+    opacity: 1;
+}
+
+.cursor.hover--send .cursor__send {
+    opacity: 1;
+}
+
+.cursor.hover--external .cursor__external {
+    opacity: 1;
+}
+
+.cursor.hover--arrow .cursor__circle,
+.cursor.hover--back .cursor__circle,
+.cursor.hover--send .cursor__circle,
+.cursor.hover--external .cursor__circle {
     fill: var(--c-black);
+}
+
+.cursor.hover--send .cursor__circle {
+    fill: var(--c-white);
+    stroke: var(--c-black);
 }
 
 @media (hover: none) {
@@ -277,6 +313,12 @@ img {
         display: none;
     }
 }
+
+/* @media (hover: hover){
+    .button svg{
+        display: none;
+    }
+} */
 
 /* ---------- after elements ---------- */
 
@@ -1518,9 +1560,9 @@ footer * {
     padding-top: var(--f-m);
 }
 
-.form__input {
+.form__input,
+.form__button {
     width: 100%;
-    height: 100%;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1531,19 +1573,39 @@ footer * {
     resize: none;
 }
 
+.form__input {
+    height: 100%;
+}
+
 .form__input::placeholder {
     opacity: 0;
 }
 
 .form__submit {
     background-color: var(--c-white);
-    color: var(--c-black);
     border-color: var(--c-black);
+}
+
+.form__button {
+    /* color: var(--c-black); */
+    transition: var(--t-fast) color;
+}
+
+.form__submit svg * {
+    stroke: var(--c-black);
+    transition: var(--t-fast) stroke;
 }
 
 .form__submit:hover {
     background-color: var(--c-black);
+}
+
+.form__submit:hover .form__button {
     color: var(--c-white);
+}
+
+.form__submit:hover svg * {
+    stroke: var(--c-white);
 }
 
 @container (min-width: 600px) {
@@ -1896,7 +1958,20 @@ footer * {
 
     .header {
         grid-template-columns: 1fr max-content;
+        grid-template-rows: 1fr;
         gap: var(--s-xl);
+        height: 70vh;
+        min-height: min-content;
+        max-height: 700px;
+        align-items: center;
+    }
+
+    header>* {
+        grid-row: 1;
+    }
+
+    .header::after {
+        grid-row: 1;
     }
 
     .stacked__imgs {

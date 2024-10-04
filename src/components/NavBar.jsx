@@ -11,9 +11,9 @@ const NavBar = () => {
         <header>
             <nav className="nav">
                 <ul className="nav__desktop">
-                    <li className="hover--nav"><NavLink className="nav__link" to={import.meta.env.BASE_URL}>home</NavLink></li>
-                    <li className="hover--nav"><NavLink className="nav__link" to={`${import.meta.env.BASE_URL}projects`}>projects</NavLink></li>
-                    <li className="hover--nav"><NavLink className="nav__link" to={`${import.meta.env.BASE_URL}about`}>about</NavLink></li>
+                    <li className="hover--circle"><NavLink className="nav__link" to={import.meta.env.BASE_URL}>home</NavLink></li>
+                    <li className="hover--circle"><NavLink className="nav__link" to={`${import.meta.env.BASE_URL}projects`}>projects</NavLink></li>
+                    <li className="hover--circle"><NavLink className="nav__link" to={`${import.meta.env.BASE_URL}about`}>about</NavLink></li>
                 </ul>
 
                 <div className={`nav__hamburger ${isMobileNavOpen && `open`}`} onClick={toggleMobileNav}>
