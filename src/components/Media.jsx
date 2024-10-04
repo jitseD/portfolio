@@ -69,7 +69,7 @@ const Media = ({ className, media }) => {
     return media.mediaType === "img" ? (
         <img className={className} src={mediaImgPath} alt={media.alt} />
     ) : media.mediaType === "video" && (
-        <video className={className} src={mediaImgPath} alt={media.alt} ref={videoRef}
+        <video className={`${className} hover--play`} src={mediaImgPath} alt={media.alt} ref={videoRef}
             loop playsInline controls={controlsVisible ? true : false} onClick={handleVideoClick} />
     )
 }

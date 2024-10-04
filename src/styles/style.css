@@ -6,21 +6,21 @@
 }
 
 :root {
-    /* ----- colors ----- */
+    /* -------------------------------------------------- colors -------------------------------------------------- */
     --c-white: #f2f2f2;
     --c-black: #0d0d0d;
     --c-grey: #808080;
 
-    /* ----- times ----- */
+    /* -------------------------------------------------- times -------------------------------------------------- */
     --t-fast: 0.2s ease-in-out;
     --t-slow: 0.4s ease-in-out;
 
-    /* ----- fonts ----- */
+    /* -------------------------------------------------- fonts -------------------------------------------------- */
     --f-body: "Montserrat", sans-serif;
     --f-title: "Montserrat Alternates", sans-serif;
     --f-emph: "Finder", sans-serif;
 
-    /* ----- font sizes ----- */
+    /* -------------------------------------------------- font sizes -------------------------------------------------- */
     /* 10px to 20px */
     --f-xs: clamp(0.625rem, 0.4167rem + 0.9259vw, 1.25rem);
     /* 14px to 20px */
@@ -44,7 +44,7 @@
     --f-nav: clamp(1.5rem, 1.234rem + 0.8511vw, 2rem);
 
 
-    /* ----- space sizes ----- */
+    /* -------------------------------------------------- space sizes -------------------------------------------------- */
     /* 4px to 6px */
     --s-3xs: clamp(0.25rem, 0.2083rem + 0.1852vw, 0.375rem);
     /* 8px to 12px */
@@ -97,7 +97,7 @@ html {
     border: 0;
 }
 
-/* ---------- basics ---------- */
+/* -------------------------------------------------- basics -------------------------------------------------- */
 
 body {
     background-color: var(--c-black);
@@ -180,7 +180,10 @@ main {
 .intro,
 .recent,
 .bio,
-.skillset {
+.skillset,
+.info,
+.results,
+.more {
     width: 100%;
     max-width: 1400px;
     margin-inline: auto;
@@ -241,7 +244,7 @@ img {
     user-select: none;
 }
 
-/* ---------- cursor ---------- */
+/* -------------------------------------------------- cursor -------------------------------------------------- */
 
 .cursor {
     position: fixed;
@@ -266,7 +269,9 @@ img {
 .cursor__arrow,
 .cursor__back,
 .cursor__send,
-.cursor__external {
+.cursor__external,
+.cursor__play,
+.cursor__pause {
     opacity: 0;
     transition: var(--t-fast) opacity;
     fill: transparent;
@@ -275,31 +280,28 @@ img {
 .cursor.hover--arrow,
 .cursor.hover--back,
 .cursor.hover--send,
-.cursor.hover--external {
+.cursor.hover--external,
+.cursor.hover--play,
+.cursor.hover--pause {
     mix-blend-mode: unset;
     width: 3rem;
 }
 
-.cursor.hover--arrow .cursor__arrow {
-    opacity: 1;
-}
-
-.cursor.hover--back .cursor__back {
-    opacity: 1;
-}
-
-.cursor.hover--send .cursor__send {
-    opacity: 1;
-}
-
-.cursor.hover--external .cursor__external {
+.cursor.hover--arrow .cursor__arrow,
+.cursor.hover--back .cursor__back,
+.cursor.hover--send .cursor__send,
+.cursor.hover--external .cursor__external,
+.cursor.hover--play .cursor__play,
+.cursor.hover--pause .cursor__pause {
     opacity: 1;
 }
 
 .cursor.hover--arrow .cursor__circle,
 .cursor.hover--back .cursor__circle,
 .cursor.hover--send .cursor__circle,
-.cursor.hover--external .cursor__circle {
+.cursor.hover--external .cursor__circle,
+.cursor.hover--play .cursor__circle,
+.cursor.hover--pause .cursor__circle {
     fill: var(--c-black);
 }
 
@@ -320,7 +322,7 @@ img {
     }
 } */
 
-/* ---------- after elements ---------- */
+/* -------------------------------------------------- after elements -------------------------------------------------- */
 
 main>section {
     z-index: 100;
@@ -337,7 +339,7 @@ main>section {
     color: transparent;
 }
 
-/* ---------- loader ---------- */
+/* -------------------------------------------------- loader -------------------------------------------------- */
 
 .loader__wrapper {
     display: grid;
@@ -365,7 +367,7 @@ main>section {
     }
 }
 
-/* ---------- nav ---------- */
+/* -------------------------------------------------- nav -------------------------------------------------- */
 
 .nav__hamburger {
     width: 3rem;
@@ -496,7 +498,7 @@ body:has(.mobile__wrapper.open) {
     display: none;
 }
 
-/* ---------- footer ---------- */
+/* -------------------------------------------------- footer -------------------------------------------------- */
 
 footer {
     display: grid;
@@ -557,7 +559,7 @@ footer * {
     line-height: unset;
 }
 
-/* ---------- home ---------- */
+/* -------------------------------------------------- home -------------------------------------------------- */
 
 .main--home {
     padding-block-start: 4.5rem;
@@ -741,7 +743,7 @@ footer * {
     justify-self: flex-end;
 }
 
-/* ---------- project component ---------- */
+/* -------------------------------------------------- project component -------------------------------------------------- */
 
 .project__wrapper {
     display: grid;
@@ -919,7 +921,7 @@ footer * {
     }
 }
 
-/* ---------- projects ---------- */
+/* -------------------------------------------------- projects -------------------------------------------------- */
 
 .main--projects {
     display: flex;
@@ -969,7 +971,7 @@ footer * {
     align-self: flex-end;
 }
 
-/* ---------- detail ---------- */
+/* -------------------------------------------------- detail -------------------------------------------------- */
 
 .main--detail {
     gap: var(--s-xl);
@@ -1011,6 +1013,7 @@ footer * {
     background-color: var(--c-black);
     border: var(--c-white) 1px solid;
     padding: 0.75rem 1.5rem;
+    height: max-content;
 }
 
 .detail__date {
@@ -1041,8 +1044,10 @@ footer * {
 }
 
 .results__title {
-    margin: 0rem 0rem -7.5% -12.5%;
+    margin-block-end: -7.5%;
+    margin-inline-start: -12.5%;
     font-size: var(--f-3xl);
+    z-index: -10;
 }
 
 .results__title,
@@ -1067,6 +1072,7 @@ footer * {
     flex-direction: column;
     gap: var(--s-m);
     align-items: center;
+    margin-block-start: var(--s-xl);
 }
 
 .behance__wrapper p {
@@ -1103,7 +1109,7 @@ footer * {
     max-width: 25rem;
 }
 
-/* ----- evain ----- */
+/* -------------------------------------------------- evian -------------------------------------------------- */
 
 .results__imgs--evian {
     grid-template-columns: repeat(2, 1fr);
@@ -1116,7 +1122,7 @@ footer * {
     object-fit: cover;
 }
 
-/* ----- kickstarter ----- */
+/* -------------------------------------------------- kickstarter -------------------------------------------------- */
 
 .results__imgs--kickstarter {
     grid-template-columns: 1fr;
@@ -1126,7 +1132,7 @@ footer * {
     grid-row: 3;
 }
 
-/* ---------- about ---------- */
+/* -------------------------------------------------- about -------------------------------------------------- */
 
 .main--about {
     padding-block-start: var(--s-xl);
@@ -1454,7 +1460,7 @@ footer * {
     }
 }
 
-/* ---------- contact ---------- */
+/* -------------------------------------------------- contact -------------------------------------------------- */
 
 .contact {
     display: grid;
@@ -1615,10 +1621,10 @@ footer * {
     }
 }
 
-/* ---------- media queries ---------- */
+/* -------------------------------------------------- media queries -------------------------------------------------- */
 
 @media (min-width: 500px) {
-    /* ---------- nav ---------- */
+    /* -------------------------------------------------- nav -------------------------------------------------- */
 
     .nav__desktop {
         display: flex;
@@ -1643,14 +1649,14 @@ footer * {
         display: none;
     }
 
-    /* ---------- home ---------- */
+    /* -------------------------------------------------- home -------------------------------------------------- */
 
     .intro__button {
         margin-inline-start: 35vw;
         justify-self: flex-start;
     }
 
-    /* ---------- project component ---------- */
+    /* -------------------------------------------------- project component -------------------------------------------------- */
 
     @media (hover: none) {
         .project.left.open .project__img--cover {
@@ -1670,7 +1676,44 @@ footer * {
         }
     }
 
-    /* ---------- about ---------- */
+    /* -------------------------------------------------- detail -------------------------------------------------- */
+
+    .detail__imgs {
+        height: 90vw;
+    }
+
+    .detail__img {
+        width: 60vw;
+    }
+
+    /* -------------------------------------------------- evian -------------------------------------------------- */
+
+    .results__imgs--evian {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .results__imgs--evian .results__img:nth-child(4) {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .results__imgs--evian .results__img:last-child {
+        grid-column: 1/3;
+        aspect-ratio: unset;
+    }
+
+    /* -------------------------------------------------- kickstarter -------------------------------------------------- */
+
+    .results__imgs--kickstarter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .results__imgs--kickstarter .results__img:last-child {
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+
+    /* -------------------------------------------------- about -------------------------------------------------- */
 
     .bio>* {
         grid-column: 1;
@@ -1706,7 +1749,7 @@ footer * {
         }
     }
 
-    /* ---------- footer ---------- */
+    /* -------------------------------------------------- footer -------------------------------------------------- */
 
     .socials {
         grid-template-columns: repeat(4, max-content);
@@ -1719,7 +1762,7 @@ footer * {
 }
 
 @media (min-width: 750px) {
-    /* ---------- home ---------- */
+    /* -------------------------------------------------- home -------------------------------------------------- */
 
     .header {
         gap: var(--s-m);
@@ -1729,7 +1772,8 @@ footer * {
         transform: translate(15%, 60%);
     }
 
-    .stacked__imgs>img {
+    .header__img,
+    .intro__img {
         width: 40vw;
     }
 
@@ -1789,7 +1833,40 @@ footer * {
         }
     }
 
-    /* ---------- about ---------- */
+    /* -------------------------------------------------- detail -------------------------------------------------- */
+
+    .info {
+        display: grid;
+    }
+
+    .detail__imgs {
+        width: 70vw;
+        height: unset;
+        aspect-ratio: 1;
+        grid-column: 1;
+        grid-row: 1/3;
+        justify-self: flex-end;
+        margin-inline-end: -10%;
+        transform: translateY(-15%);
+        z-index: -10;
+    }
+
+    .detail__img {
+        width: 45vw;
+    }
+
+    .detail__name {
+        grid-column: 1;
+        grid-row: 2;
+        hyphens: none;
+    }
+
+    .detail__tags {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    /* -------------------------------------------------- about -------------------------------------------------- */
 
     .skillset::after {
         justify-self: flex-start;
@@ -1823,7 +1900,7 @@ footer * {
         }
     }
 
-    /* ---------- footer ---------- */
+    /* -------------------------------------------------- footer -------------------------------------------------- */
 
     footer {
         grid-template-columns: 1fr max-content;
@@ -1840,7 +1917,7 @@ footer * {
 }
 
 @media (min-width: 900px) {
-    /* ---------- home ---------- */
+    /* -------------------------------------------------- home -------------------------------------------------- */
 
     @media (hover: none) {
         .recent {
@@ -1887,14 +1964,57 @@ footer * {
         }
     }
 
-    /* ---------- project component ---------- */
+    /* -------------------------------------------------- project component -------------------------------------------------- */
 
     .project__info {
         width: 50vw;
         max-width: 720px;
     }
 
-    /* ---------- about ---------- */
+    /* -------------------------------------------------- detail -------------------------------------------------- */
+
+    .info {
+        grid-template-columns: auto minmax(30%, 600px);
+        grid-template-rows: 1fr repeat(2, max-content) 1fr;
+        height: max-content;
+        width: 100%;
+        gap: var(--s-s);
+    }
+
+    .detail__imgs {
+        grid-column: 2;
+        grid-row: 1/5;
+        height: 50vw;
+        width: 120%;
+        aspect-ratio: unset;
+        align-self: flex-start;
+    }
+
+    .detail__img {
+        width: 30vw;
+        max-width: 400px;
+    }
+
+    .detail__name {
+        grid-row: 1;
+    }
+
+    .detail__tags {
+        grid-row: 2;
+    }
+
+    .detail__name.emph {
+        font-size: var(--f-xl);
+        align-self: flex-end;
+    }
+
+    .detail__website {
+        grid-column: 2;
+        grid-row: 4;
+        place-self: center;
+    }
+
+    /* -------------------------------------------------- about -------------------------------------------------- */
 
     .main--about {
         padding-block-start: var(--s-3xl);
@@ -1942,7 +2062,7 @@ footer * {
         }
     }
 
-    /* ---------- contact ---------- */
+    /* -------------------------------------------------- contact -------------------------------------------------- */
 
     .contact {
         margin-block-start: 5rem;
@@ -1954,7 +2074,7 @@ footer * {
         max-width: 680px;
     }
 
-    /* ---------- home ---------- */
+    /* -------------------------------------------------- home -------------------------------------------------- */
 
     .header {
         grid-template-columns: 1fr max-content;
@@ -1979,7 +2099,8 @@ footer * {
         margin-inline-end: calc(0px - var(--s-side-margin) / 2);
     }
 
-    .stacked__imgs>img {
+    .header__img,
+    .intro__img {
         width: 30vw;
         max-width: 450px;
     }
@@ -2015,7 +2136,7 @@ footer * {
         }
     }
 
-    /* ---------- project component ---------- */
+    /* -------------------------------------------------- project component -------------------------------------------------- */
 
     @media (hover: hover) {
         .project__img {
@@ -2024,7 +2145,54 @@ footer * {
         }
     }
 
-    /* ---------- about ---------- */
+    /* -------------------------------------------------- detail -------------------------------------------------- */
+
+    .detail__imgs {
+        height: 120%;
+        width: 40vw;
+        max-width: 650px;
+        justify-self: center;
+    }
+
+    .detail__website {
+        justify-self: flex-start;
+        transform: translateX(50%);
+    }
+
+    /* -------------------------------------------------- evian -------------------------------------------------- */
+
+    .results__imgs--evian {
+        grid-template-columns: 20% 1fr 20%;
+    }
+
+    .results__imgs--evian .results__img:nth-child(1),
+    .results__imgs--evian .results__img:nth-child(2) {
+        grid-column: 1;
+    }
+
+    .results__imgs--evian .results__img:nth-child(3),
+    .results__imgs--evian .results__img:nth-child(4) {
+        grid-column: 3;
+    }
+
+    .results__imgs--evian .results__img:nth-child(3) {
+        grid-row: 1;
+    }
+
+    .results__imgs--evian .results__img:nth-child(4) {
+        height: unset;
+        object-fit: cover;
+        grid-row: 2;
+    }
+
+    .results__imgs--evian .results__img:last-child {
+        grid-column: 2;
+        grid-row: 1/3;
+        height: 100%;
+        aspect-ratio: unset;
+    }
+
+    /* -------------------------------------------------- about -------------------------------------------------- */
 
     .main--about {
         padding-block-start: var(--s-3xl);
@@ -2134,7 +2302,7 @@ footer * {
         transform: translate(0%, -50%);
     }
 
-    /* ---------- contact ---------- */
+    /* -------------------------------------------------- contact -------------------------------------------------- */
 
     .contact__content {
         grid-template-columns: repeat(2, 1fr);
