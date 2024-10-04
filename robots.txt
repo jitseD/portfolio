@@ -1,0 +1,8 @@
+# Allow all crawlers access to the specified directories
+User-agent: *
+Disallow: /devine/
+Allow: /
+
+# Disallow: /private/
+# Disallow: /admin/
+# Disallow: /login/

@@ -36,8 +36,8 @@ const ContactForm = () => {
             </label>
             <div className="form__submit button hover--send">
                 <input className="form__button" type="submit" value="Send" />
-                <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30.0002 14.0003L2.00019 1.5L8.99995 14M30.0002 14.0003L8.99995 14M30.0002 14.0003L2 26.5L8.99995 14" stroke="#F2F2F2" />
+                <svg width="35" height="32" viewBox="0 0 35 32" fill="none">
+                    <path d="M33.3602 16.0003L2.00022 2L9.83994 16M33.3602 16.0003L9.83994 16M33.3602 16.0003L2 30L9.83994 16" stroke="#0D0D0D" />
                 </svg>
             </div>
         </form>

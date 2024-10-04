@@ -1593,12 +1593,10 @@ footer * {
 }
 
 .form__button {
-    /* color: var(--c-black); */
     transition: var(--t-fast) color;
 }
 
 .form__submit svg * {
-    stroke: var(--c-black);
     transition: var(--t-fast) stroke;
 }
 
