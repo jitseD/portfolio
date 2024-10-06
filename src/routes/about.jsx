@@ -19,6 +19,7 @@ import SkillsetWrapper from "../components/SkillsetWrapper";
 import skillData from "../assets/data/skills.json";
 import Loader from "../components/Loader";
 import ContactSection from "../components/ContactSection";
+import GridSvg from "../components/GridSvg";
 
 const About = () => {
     const [data, setData] = useState(null);
@@ -64,6 +65,7 @@ const About = () => {
                 )}
             </section>
             <ContactSection />
+            <GridSvg />
         </main>
     )
 }

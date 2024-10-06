@@ -4,6 +4,7 @@ import ProjectItem from "../components/ProjectItem";
 import Loader from "../components/Loader";
 import FilterTag from "../components/FilterTag";
 import ContactSection from "../components/ContactSection";
+import GridSvg from "../components/GridSvg";
 
 const Projects = () => {
     const [projects, setProjects] = useState(null);
@@ -62,7 +63,8 @@ const Projects = () => {
                     )}
                 </ul>
             </section>
-            <ContactSection/>
+            <ContactSection />
+            <GridSvg />
         </main>
     )
 }

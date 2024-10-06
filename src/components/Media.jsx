@@ -13,7 +13,7 @@ const Media = ({ className, media }) => {
     const videoRef = useRef(null);
 
     useEffect(() => {
-        if (media.mediaType === "img") {
+        if (media.mediaType === "img" && media.srcSet) {
             const loadMediaAsync = async () => {
                 const srcSetPromises = media.srcSet.sizes.map(async (size) => {
                     const mediaSrc = await loadMedia(`${media.filePath}-${size}.${media.srcSet.type}`);

@@ -2,6 +2,7 @@ import { Link, useLoaderData, useLocation } from "react-router-dom";
 import { getMediaObject } from "../utils/loadMedia";
 import projectsData from "../assets/data/projects.json";
 import Media from "../components/Media";
+import GridSvg from "../components/GridSvg";
 
 const loader = async ({ params }) => {
     const project = projectsData.projects.find((proj) => proj.id === params.id);
@@ -95,6 +96,7 @@ const ProjectDetail = () => {
                     </li>
                 </ul>
             </section>
+            <GridSvg />
         </main>
     )
 }

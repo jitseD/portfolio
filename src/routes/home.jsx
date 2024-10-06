@@ -20,6 +20,7 @@ import projectsData from "../assets/data/projects.json";
 import ProjectItem from "../components/ProjectItem";
 import Loader from "../components/Loader";
 import ContactSection from "../components/ContactSection";
+import GridSvg from "../components/GridSvg";
 
 const Home = () => {
     const [projects, setProjects] = useState(null);
@@ -98,6 +99,7 @@ const Home = () => {
                 </Link>
             </section>
             <ContactSection />
+            <GridSvg />
         </main >
     )
 }
