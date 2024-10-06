@@ -11,6 +11,10 @@
     --c-black: #0d0d0d;
     --c-grey: #808080;
 
+    /* -------------------------------------------------- gsap variables -------------------------------------------------- */
+    --translateY: -10vh;
+    --footerOpacity: 0;
+
     /* -------------------------------------------------- times -------------------------------------------------- */
     --t-fast: 0.2s ease-in-out;
     --t-slow: 0.4s ease-in-out;
@@ -97,10 +101,7 @@ html {
 
 /* -------------------------------------------------- basics -------------------------------------------------- */
 
-html {
-    background-color: var(--c-black);
-}
-
+html,
 main,
 header,
 footer {
@@ -544,6 +545,7 @@ footer {
     width: 100%;
     max-width: var(--s-max-width);
     z-index: -100;
+    opacity: var(--footerOpacity);
 }
 
 .main--detail+footer {
@@ -2503,13 +2505,5 @@ footer * {
     .form {
         grid-column: 2;
         grid-row: 1/3;
-    }
-}
-
-@media (min-width: 1800px) {
-    html {
-        background-image: url(../assets/img/texture.jpg);
-        background-size: repeat;
-        background-attachment: fixed;
     }
 }

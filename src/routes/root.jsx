@@ -14,9 +14,7 @@ const Root = () => {
     useEffect(() => {
         const body = document.querySelector('body');
 
-        gsap.set(':root', { '--translateY': '-10vh' }); // Set initial value for the root variable
-
-        const animation = gsap.to(':root', {
+        const parallaxText = gsap.to(':root', {
             scrollTrigger: {
                 trigger: body,
                 start: 'top top',
@@ -25,12 +23,24 @@ const Root = () => {
             },
             '--translateY': '10vh',
             duration: 1,
+        })
+
+        const footerOpacity = gsap.to(':root', {
+            scrollTrigger: {
+                trigger: body,
+                start: 'bottom bottom',
+                end: 'bottom bottom',
+                toggleActions: 'play none none reverse',
+            },
+            '--footerOpacity': '1',
+            duration: 0.01,
         });
 
         return () => {
-            animation.kill();
+            parallaxText.kill();
+            footerOpacity.kill();
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        };
+        }
     }, []);
 
     return (
