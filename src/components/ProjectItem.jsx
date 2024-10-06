@@ -31,7 +31,6 @@ const ProjectItem = ({ project, index, totalProjects }) => {
                 onLeave: () => { if (!lastProject) closeProject() },
                 onEnterBack: () => { openProject() },
                 onLeaveBack: () => { if (!firstProject) closeProject() },
-                markers: false,
             },
         });
 

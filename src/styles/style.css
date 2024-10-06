@@ -101,7 +101,10 @@ html {
     background-color: var(--c-black);
 }
 
-main, header, footer {
+main,
+header,
+footer {
+    background-color: var(--c-black);
     background-image: url(../assets/img/texture.jpg);
     background-size: repeat;
     background-attachment: fixed;
@@ -545,6 +548,7 @@ footer {
 
 .main--detail+footer {
     background-color: var(--c-white);
+    background-image: unset;
 }
 
 footer * {
@@ -613,7 +617,8 @@ footer * {
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translate(15%, 70%);
+    transform: translate(15%, calc(150% + 2 * var(--translateY)));
+    will-change: transform;
 }
 
 .header__title {
@@ -708,17 +713,22 @@ footer * {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--s-m);
+    position: relative;
+    margin-block-start: var(--f-4xl);
 }
 
 .intro__hey {
-    grid-row: 1;
-    margin: 0rem 0rem calc(0rem - 0.4 * var(--f-4xl) - var(--s-m)) -15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(-50% + 2 * var(--translateY)));
+    margin-inline-start: -15%;
 }
 
 .intro__imgs,
 .intro__button {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
 }
 
 .intro__imgs {
@@ -754,7 +764,7 @@ footer * {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, calc(-600% + 10 * var(--translateY)));
 }
 
 .recent__projects {
@@ -1021,6 +1031,7 @@ footer * {
     align-items: center;
     width: max-content;
     padding-block: 0.5rem;
+    z-index: 100;
 }
 
 .info {
@@ -1715,6 +1726,10 @@ footer * {
         justify-self: flex-start;
     }
 
+    .recent::after {
+        transform: translate(-50%, calc(-400% + 9 * var(--translateY)));
+    }
+
     /* -------------------------------------------------- project component -------------------------------------------------- */
 
     @media (hover: none) {
@@ -1869,7 +1884,7 @@ footer * {
     }
 
     .header::after {
-        transform: translate(15%, 60%);
+        transform: translate(15%, calc(60% + 2 * var(--translateY)));
     }
 
     .header__img,
@@ -1878,38 +1893,41 @@ footer * {
     }
 
     .intro {
-        grid-template-columns: 5fr 3fr;
+        grid-template-columns: 10fr 3fr;
+        grid-template-rows: max-content max-content 1fr;
+        margin-block-start: var(--s-3xl);
+    }
+
+    .intro__hey {
+        transform: translateY(calc(-60% + 2 * var(--translateY)));
     }
 
     .intro__title,
-    .intro__hey,
     .intro__text {
         grid-column: 1;
     }
 
-    .intro__title {
-        grid-row: 2;
-    }
-
-    .intro__text {
-        grid-row: 3;
-    }
-
     .intro__imgs {
         grid-column: 2;
-        grid-row: 1/5;
-        place-self: flex-end;
-        margin-block-end: calc(0px - var(--s-m));
+        grid-row: 1/4;
+        align-self: center;
+        justify-self: flex-end;
+        margin-block: calc(0px - var(--s-m));
     }
 
     .intro__button {
         grid-column: 1/-1;
-        grid-row: 4;
-        place-self: flex-end;
+        grid-row: 3;
+        align-self: center;
+        justify-self: flex-end;
         margin-inline-start: unset;
-        margin-block-start: var(--s-xs);
+        margin-block: unset;
         margin-inline-end: 30vw;
         width: max-content;
+    }
+
+    .recent::after {
+        transform: translate(-50%, calc(-300% + 8 * var(--translateY)));
     }
 
     @media (hover: none) {
@@ -2018,6 +2036,19 @@ footer * {
 
 @media (min-width: 900px) {
     /* -------------------------------------------------- home -------------------------------------------------- */
+
+    .intro {
+        margin-block-start: var(--s-xl);
+        z-index: -10;
+    }
+
+    .intro__hey {
+        transform: translateY(calc(-60% + 2 * var(--translateY)));
+    }
+
+    .recent::after {
+        transform: translate(-50%, calc(-200% + 6 * var(--translateY)));
+    }
 
     @media (hover: none) {
         .recent {
@@ -2192,6 +2223,7 @@ footer * {
 
     .header::after {
         grid-row: 1;
+        transform: translateY(calc(100% + 2 * var(--translateY)));
     }
 
     .stacked__imgs {
@@ -2210,9 +2242,25 @@ footer * {
         transform: unset;
     }
 
+    .intro {
+        margin-block-start: calc(1.5 * var(--f-2xl));
+    }
+
+    .intro__title {
+        margin-block-start: var(--s-l);
+    }
+
+    .intro__hey {
+        transform: translateY(calc(-60% + 2 * var(--translateY)));
+    }
+
     .intro__button {
         margin-block-start: unset;
         margin-inline-end: 25%;
+    }
+
+    .recent::after {
+        transform: translate(-50%, calc(-150% + 6 * var(--translateY)));
     }
 
     @media (hover: hover) {

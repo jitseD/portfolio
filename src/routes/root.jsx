@@ -5,7 +5,34 @@ import NavBar from "../components/NavBar";
 import FooterBar from "../components/FooterBar"
 import Cursor from "../components/Cursor";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+gsap.registerPlugin(ScrollTrigger);
+
 const Root = () => {
+    useEffect(() => {
+        const body = document.querySelector('body');
+
+        gsap.set(':root', { '--translateY': '-10vh' }); // Set initial value for the root variable
+
+        const animation = gsap.to(':root', {
+            scrollTrigger: {
+                trigger: body,
+                start: 'top top',
+                end: 'bottom bottom',
+                scrub: true,
+            },
+            '--translateY': '10vh',
+            duration: 1,
+        });
+
+        return () => {
+            animation.kill();
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []);
+
     return (
         <ReactLenis root>
             <ScrollToTop>
