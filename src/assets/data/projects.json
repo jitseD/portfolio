@@ -3,7 +3,7 @@
         {
             "id": "campaign",
             "name": "Back\u00ADpacks Without Limits",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+            "description": "#BackpacksWithoutLimits is a digital campaign powered by Lotus Bakeries to fight educational poverty in flemish schools. The project involved creating a campaign, designing the website and crafting social media mockups to encourage community involvement and sharing through interactive storytelling.",
             "tags": [
                 {
                     "tag": "social media",
@@ -22,12 +22,163 @@
             "url": "https://www.figma.com/proto/h9KjN734q86iuMv3jcyEMT/Lotus-Bakeries-Campaign?page-id=2%3A5&node-id=100-964&node-type=canvas&viewport=674%2C491%2C0.04&t=l5qd7gsdM3AgfiEN-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=154%3A170",
             "behanceUrl": null,
             "highlighted": true,
-            "media": []
+            "results": [
+                {
+                    "type": "web",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-1",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 1",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-2",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 2",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-3",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 3",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-4",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 4",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/campaign/web",
+                            "fileExtension": "mp4",
+                            "alt": "website video"
+                        }
+                    ]
+                },
+                {
+                    "type": "socials",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-1",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 1",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-2",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 2",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-3",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 3",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-4",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 4",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/campaign/socials",
+                            "fileExtension": "mp4",
+                            "alt": "instagram story video"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id": "conference",
             "name": "Online Confer\u00ADence",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+            "description": "Education for Everyone is a digital conference powered by Lotus Bakeries to fight educational poverty in flemish schools. The project involved designing a responsive website featuring the speakers and an event program, allowing attendees to register for talks and workshops. The design blends Lotus Bakeries' corporate identity with the educational theme.",
             "tags": [
                 {
                     "tag": "responsive design",
@@ -42,7 +193,251 @@
             "url": "https://www.figma.com/proto/5vYln2cRUAeJCv9i04jq63/Lotus-Bakeries-Conference...",
             "behanceUrl": null,
             "highlighted": true,
-            "media": []
+            "results": [
+                {
+                    "type": "responsive",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/desktop-1",
+                            "fileExtension": "jpg",
+                            "alt": "website desktop screenshot 1",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/tablet-1",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 1",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/mobile-1",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 1",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/desktop-2",
+                            "fileExtension": "jpg",
+                            "alt": "website desktop screenshot 2",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/tablet-2",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 2",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/mobile-2",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 2",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/desktop-3",
+                            "fileExtension": "jpg",
+                            "alt": "website desktop screenshot 3",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/tablet-3",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 3",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/mobile-3",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 3",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/desktop-4",
+                            "fileExtension": "jpg",
+                            "alt": "website desktop screenshot 4",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/tablet-4",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 4",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/conference/mobile-4",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 4",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/conference/video",
+                            "fileExtension": "mp4",
+                            "alt": "responsive website video"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id": "kickstarter",
@@ -63,36 +458,85 @@
             "url": "https://vimeo.com/1013344283",
             "behanceUrl": null,
             "highlighted": false,
-            "media": [
+            "results": [
                 {
-                    "mediaType": "img",
-                    "filePath": "projects/kickstarter/result-1",
-                    "fileExtension": "png",
-                    "alt": "snapshot 1"
-                },
-                {
-                    "mediaType": "img",
-                    "filePath": "projects/kickstarter/result-2",
-                    "fileExtension": "png",
-                    "alt": "snapshot 2"
-                },
-                {
-                    "mediaType": "img",
-                    "filePath": "projects/kickstarter/result-3",
-                    "fileExtension": "png",
-                    "alt": "snapshot 3"
-                },
-                {
-                    "mediaType": "img",
-                    "filePath": "projects/kickstarter/result-4",
-                    "fileExtension": "png",
-                    "alt": "snapshot 4"
-                },
-                {
-                    "mediaType": "video",
-                    "filePath": "projects/kickstarter/video",
-                    "fileExtension": "mp4",
-                    "alt": "promo video"
+                    "type": "web",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/kickstarter/web-1",
+                            "fileExtension": "jpg",
+                            "alt": "snapshot 1",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/kickstarter/web-2",
+                            "fileExtension": "jpg",
+                            "alt": "snapshot 2",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/kickstarter/web-3",
+                            "fileExtension": "jpg",
+                            "alt": "snapshot 3",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/kickstarter/web-4",
+                            "fileExtension": "jpg",
+                            "alt": "snapshot 4",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/kickstarter/web",
+                            "fileExtension": "mp4",
+                            "alt": "promo video"
+                        }
+                    ]
                 }
             ]
         },
@@ -119,36 +563,77 @@
             "url": null,
             "behanceUrl": null,
             "highlighted": true,
-            "media": [
+            "results": [
                 {
-                    "mediaType": "img",
-                    "filePath": "projects/evian/result-1",
-                    "fileExtension": "png",
-                    "alt": "instagram story 1"
-                },
-                {
-                    "mediaType": "img",
-                    "filePath": "projects/evian/result-2",
-                    "fileExtension": "png",
-                    "alt": "instagram story 2"
-                },
-                {
-                    "mediaType": "img",
-                    "filePath": "projects/evian/result-3",
-                    "fileExtension": "png",
-                    "alt": "instagram story 3"
-                },
-                {
-                    "mediaType": "img",
-                    "filePath": "projects/evian/result-4",
-                    "fileExtension": "png",
-                    "alt": "overview of instagram stories"
-                },
-                {
-                    "mediaType": "video",
-                    "filePath": "projects/evian/video",
-                    "fileExtension": "mp4",
-                    "alt": "instagram story video"
+                    "type": "socials",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-1",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 1",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-2",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 2",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-3",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 3",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-4",
+                            "fileExtension": "jpg",
+                            "alt": "overview of instagram stories",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/evian/socials",
+                            "fileExtension": "mp4",
+                            "alt": "instagram story video"
+                        }
+                    ]
                 }
             ]
         }

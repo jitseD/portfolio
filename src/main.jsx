@@ -1,6 +1,5 @@
 import './styles/reset.css';
 import './styles/style.css';
-import './utils/script.js';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

@@ -57,9 +57,13 @@ const ProjectDetail = () => {
             </section>
             <section className="results">
                 <h2 className="results__title outline emph">Results</h2>
-                <div className={`results__imgs results__imgs--${project.id}`}>
-                    {project.media.map((media, index) => (
-                        <Media className="results__img" media={media} key={index} />
+                <div className={`results__imgs`}>
+                    {project.results.map((result, index) => (
+                        <div className={`results__${result.type}`} key={index}>
+                            {result.media.map((media, index) => (
+                                <Media className="results__img" media={media} key={index} />
+                            ))}
+                        </div>
                     ))}
                 </div>
                 {project.behanceUrl && (

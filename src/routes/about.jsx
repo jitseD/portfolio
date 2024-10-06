@@ -1,6 +1,20 @@
 import { useEffect, useState } from "react";
-import img1 from "../assets/img/me-1.png";
-import img2 from "../assets/img/me-2.png";
+import img1_base from "../assets/img/me-1.jpg";
+import img1_200 from "../assets/img/me-1-200.avif";
+import img1_400 from "../assets/img/me-1-400.avif";
+import img1_600 from "../assets/img/me-1-600.avif";
+import img1_800 from "../assets/img/me-1-800.avif";
+import img1_1000 from "../assets/img/me-1-1000.avif";
+import img1_1200 from "../assets/img/me-1-1200.avif";
+import img1_1600 from "../assets/img/me-1-1600.avif";
+import img2_base from "../assets/img/me-2.jpg";
+import img2_200 from "../assets/img/me-2-200.avif";
+import img2_400 from "../assets/img/me-2-400.avif";
+import img2_600 from "../assets/img/me-2-600.avif";
+import img2_800 from "../assets/img/me-2-800.avif";
+import img2_1000 from "../assets/img/me-2-1000.avif";
+import img2_1200 from "../assets/img/me-2-1200.avif";
+import img2_1600 from "../assets/img/me-2-1600.avif";
 import SkillsetWrapper from "../components/SkillsetWrapper";
 import skillData from "../assets/data/skills.json";
 import Loader from "../components/Loader";
@@ -23,8 +37,20 @@ const About = () => {
                     <p>My journey into digital design and development started with a curiosity about how creativity and technology intersect. My studies and experiences abroad are <strong>broadening my perspective</strong> and shaping my ability to approach problems from various angles, enabling me to develop innovative, user-centered solutions.</p>
                 </div>
                 <div className="bio__imgs">
-                    <img className="bio__img" src={img1} alt="Jitse Dekeyser" />
-                    <img className="bio__img" src={img2} alt="Jitse Dekeyser" />
+                    <img
+                        className="bio__img"
+                        srcSet={`${img1_200} 200w, ${img1_400} 400w, ${img1_600} 600w, ${img1_800} 800w, ${img1_1000} 1000w, ${img1_1200} 1200w, ${img1_1600} 1600w`}
+                        sizes="(min-width: 1800px) 360px,(min-width:900px) 40vw, 250px"
+                        src={img1_base}
+                        alt="Jitse Dekeyser"
+                    />
+                    <img
+                        className="bio__img"
+                        srcSet={`${img2_200} 200w, ${img2_400} 400w, ${img2_600} 600w, ${img2_800} 800w, ${img2_1000} 1000w, ${img2_1200} 1200w, ${img2_1600} 1600w`}
+                        sizes="(min-width: 1800px) 360px,(min-width:900px) 40vw, 250px"
+                        src={img2_base}
+                        alt="Jitse Dekeyser"
+                    />
                 </div>
             </section>
             <section className="skillset">

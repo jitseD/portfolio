@@ -8,20 +8,39 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Media = ({ className, media }) => {
     const [mediaImgPath, setMediaImgPath] = useState(null);
+    const [mediaSrcSet, setMediaSrcSet] = useState("");
     const [controlsVisible, setControlsVisible] = useState(false);
     const videoRef = useRef(null);
 
     useEffect(() => {
-        const loadMediaAsync = async () => {
-            if (media.filePath) {
-                const mediaSrc = await loadMedia(`${media.filePath}.${media.fileExtension}`); // Call loadMedia
-                setMediaImgPath(mediaSrc);
-            } else {
-                setMediaImgPath(null);
-            }
-        };
+        if (media.mediaType === "img") {
+            const loadMediaAsync = async () => {
+                const srcSetPromises = media.srcSet.sizes.map(async (size) => {
+                    const mediaSrc = await loadMedia(`${media.filePath}-${size}.${media.srcSet.type}`);
+                    return `${mediaSrc} ${size}w`;
+                })
 
-        loadMediaAsync();
+                const srcSetArray = await Promise.all(srcSetPromises);
+                const srcSetStr = srcSetArray.join(", ");
+                const baseImgPath = await loadMedia(`${media.filePath}-${media.srcSet.sizes[0]}.${media.srcSet.type}`);
+
+                setMediaSrcSet(srcSetStr);
+                setMediaImgPath(baseImgPath);
+            };
+
+            loadMediaAsync();
+        } else {
+            const loadMediaAsync = async () => {
+                if (media.filePath) {
+                    const mediaSrc = await loadMedia(`${media.filePath}.${media.fileExtension}`);
+                    setMediaImgPath(mediaSrc);
+                } else {
+                    setMediaImgPath(null);
+                }
+            };
+
+            loadMediaAsync();
+        }
     }, [media]);
 
     useEffect(() => {
@@ -67,7 +86,7 @@ const Media = ({ className, media }) => {
     const handleVideoClick = () => setControlsVisible(true);
 
     return media.mediaType === "img" ? (
-        <img className={className} src={mediaImgPath} alt={media.alt} />
+        <img className={className} srcSet={mediaSrcSet} sizes={media.sizes} src={mediaImgPath} alt={media.alt} />
     ) : media.mediaType === "video" && (
         <video className={`${className} hover--play`} src={mediaImgPath} alt={media.alt} ref={videoRef}
             loop playsInline controls={controlsVisible ? true : false} onClick={handleVideoClick} />

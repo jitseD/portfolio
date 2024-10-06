@@ -74,7 +74,6 @@ const ProjectItem = ({ project, index, totalProjects }) => {
                     </div>
                 </div>
                 <div className="project__imgs">
-
                     <Media className="project__img project__img--cover" media={media.cover} />
                     <Media className="project__img project__img--overview" media={media.overview} />
                 </div>
