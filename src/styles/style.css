@@ -13,7 +13,6 @@
 
     /* -------------------------------------------------- gsap variables -------------------------------------------------- */
     --translateY: -10vh;
-    --footerOpacity: 0;
 
     /* -------------------------------------------------- times -------------------------------------------------- */
     --t-fast: 0.2s ease-in-out;
@@ -108,7 +107,6 @@ footer {
     background-color: var(--c-black);
     background-image: url(../assets/img/texture.jpg);
     background-size: repeat;
-    background-attachment: fixed;
 }
 
 .grid__wrapper {
@@ -117,13 +115,13 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -999;
 }
 
 .grid {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -999;
     opacity: 0.2;
     width: 100%;
     height: max-content;
@@ -225,14 +223,6 @@ main {
     width: 100%;
     max-width: 1400px;
     margin-inline: auto;
-}
-
-html,
-a,
-label,
-input,
-textarea {
-    cursor: none;
 }
 
 .button {
@@ -545,7 +535,6 @@ footer {
     width: 100%;
     max-width: var(--s-max-width);
     z-index: -100;
-    opacity: var(--footerOpacity);
 }
 
 .main--detail+footer {

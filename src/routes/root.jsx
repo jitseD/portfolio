@@ -25,20 +25,8 @@ const Root = () => {
             duration: 1,
         })
 
-        const footerOpacity = gsap.to(':root', {
-            scrollTrigger: {
-                trigger: body,
-                start: 'bottom bottom',
-                end: 'bottom bottom',
-                toggleActions: 'play none none reverse',
-            },
-            '--footerOpacity': '1',
-            duration: 0.01,
-        });
-
         return () => {
             parallaxText.kill();
-            footerOpacity.kill();
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         }
     }, []);
