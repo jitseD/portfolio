@@ -990,8 +990,12 @@ footer * {
     background-color: var(--c-black);
     border: var(--c-white) 1px dashed;
     border-radius: 100px;
-    transition: var(--t-fast) background-color, var(--t-fast) color;
+    transition: var(--t-fast) background-color, var(--t-fast) color, var(--t-fast) border;
     width: fit-content;
+}
+
+.filter__tag:hover {
+    border: var(--c-white) 1px solid;
 }
 
 .filter__tag.active {
