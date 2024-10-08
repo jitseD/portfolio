@@ -986,9 +986,10 @@ footer * {
 }
 
 .filter__tag {
-    padding: var(--s-xs);
+    padding: var(--s-xs) var(--s-s);
     background-color: var(--c-black);
-    border: var(--c-white) 1px solid;
+    border: var(--c-white) 1px dashed;
+    border-radius: 100px;
     transition: var(--t-fast) background-color, var(--t-fast) color;
     width: fit-content;
 }
@@ -996,6 +997,7 @@ footer * {
 .filter__tag.active {
     color: var(--c-black);
     background-color: var(--c-white);
+    border: var(--c-white) 1px solid;
 }
 
 .projects__list {
@@ -1049,14 +1051,16 @@ footer * {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: var(--s-m);
+    gap: var(--s-s);
 }
 
 .detail__tag {
     background-color: var(--c-black);
     border: var(--c-white) 1px dashed;
-    padding: 0.75rem 1.5rem;
+    padding: var(--s-xs) var(--s-s);
+    width: fit-content;
     height: max-content;
+    border-radius: 100px;
 }
 
 .detail__date {

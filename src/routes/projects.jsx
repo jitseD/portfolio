@@ -10,14 +10,20 @@ const Projects = () => {
     const [projects, setProjects] = useState(null);
     const [tags, setTags] = useState(null);
     const [filter, setFilter] = useState("all");
-
+    
     useEffect(() => setProjects(projectsData.projects), []);
     useEffect(() => {
         if (!projects) return;
-
+        const tagOrder = ['development', 'design', 'branding', 'motion']
+        
         const allTagTypes = projectsData.projects.flatMap(project => project.tags.map(tag => tag.tagType));
-        const tagTypes = Array.from(new Set(allTagTypes)).sort();
-        setTags(tagTypes);
+        const uniqueTags = Array.from(new Set(allTagTypes));
+
+        const sortedTags = uniqueTags
+            .filter(tag => tagOrder.includes(tag))
+            .sort((a, b) => tagOrder.indexOf(a) - tagOrder.indexOf(b));
+
+            setTags(sortedTags);
     }, [projects]);
 
     const handleFilterClick = e => {
