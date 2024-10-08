@@ -2,7 +2,7 @@
     "projects": [
         {
             "id": "trainworld",
-            "name": "Trainworld",
+            "name": "Train\u00ADworld",
             "description": "TrainWorld is a project focused on redesigning the original TrainWorld website, transforming one of its stories into an interactive one-page experience. The website features a fully responsive layout that adapts seamlessly across devices. Developed using HTML, CSS and JS.",
             "tags": [
                 {
@@ -276,6 +276,133 @@
                             "filePath": "projects/trainworld/video",
                             "fileExtension": "mp4",
                             "alt": "responsive website video"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ai",
+            "name": "Gesture Sound AI",
+            "description": "Gesture Sound AI is an interactive sound mixing tool that lets you control sounds entirely through hand and face gestures. Adjust volume, change playback speed, and loop tracks without touching a computer. Use hand gestures to play and pause specific sounds. Facial gestures allow for intuitive control over speed, volume, and looping.",
+            "tags": [
+                {
+                    "tag": "machine learning",
+                    "tagType": "development"
+                }
+            ],
+            "tools": [
+                "VS Code",
+                "Teachable Machine"
+            ],
+            "code": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ml5.js"
+            ],
+            "date": "October 2023",
+            "url": "https://www.jitsedekeyser.be/devine/gesture-sound-ai",
+            "moreUrls": [
+                {
+                    "type": "Github",
+                    "url": "https://github.com/jitseD/gesture-sound-ai"
+                }
+            ],
+            "highlighted": true,
+            "results": [
+                {
+                    "type": "web",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/ai/web-1",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 1",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/ai/web-2",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 2",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/ai/web-3",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 3",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/ai/web-4",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 4",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/ai/web",
+                            "fileExtension": "mp4",
+                            "alt": "website video"
                         }
                     ]
                 }
@@ -583,7 +710,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
@@ -598,7 +729,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
@@ -613,7 +748,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
@@ -628,7 +767,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
@@ -681,7 +824,11 @@
                                     400,
                                     600,
                                     800,
-                                    1000
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
                                 ]
                             }
                         },
@@ -698,7 +845,11 @@
                                     400,
                                     600,
                                     800,
-                                    1000
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
                                 ]
                             }
                         },
@@ -715,7 +866,11 @@
                                     400,
                                     600,
                                     800,
-                                    1000
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
                                 ]
                             }
                         },
@@ -732,7 +887,11 @@
                                     400,
                                     600,
                                     800,
-                                    1000
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
                                 ]
                             }
                         },
@@ -758,7 +917,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
@@ -773,7 +936,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
@@ -788,7 +955,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
@@ -803,7 +974,11 @@
                                 "sizes": [
                                     200,
                                     300,
-                                    400
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1080
                                 ]
                             }
                         },
