@@ -1,41 +1,95 @@
 {
     "projects": [
         {
-            "id": "campaign",
-            "name": "Back\u00ADpacks Without Limits",
-            "description": "#BackpacksWithoutLimits is a digital campaign powered by Lotus Bakeries to fight educational poverty in flemish schools. The project involved creating a campaign, designing the website and crafting social media mockups to encourage community involvement and sharing through interactive storytelling.",
+            "id": "trainworld",
+            "name": "Trainworld",
+            "description": "TrainWorld is a project focused on redesigning the original TrainWorld website, transforming one of its stories into an interactive one-page experience. The website features a fully responsive layout that adapts seamlessly across devices. Developed using HTML, CSS and JS.",
             "tags": [
                 {
-                    "tag": "social media",
-                    "tagType": "branding"
+                    "tag": "interactive",
+                    "tagType": "development"
                 },
                 {
-                    "tag": "web design",
+                    "tag": "responsive design",
                     "tagType": "design"
                 }
             ],
             "tools": [
                 "Figma",
-                "Photoshop"
+                "Photoshop",
+                "VS Code"
             ],
-            "date": "November 2023",
-            "url": "https://www.figma.com/proto/h9KjN734q86iuMv3jcyEMT/Lotus-Bakeries-Campaign?page-id=2%3A5&node-id=100-964&node-type=canvas&viewport=674%2C491%2C0.04&t=l5qd7gsdM3AgfiEN-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=154%3A170",
-            "behanceUrl": null,
+            "code": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Vite",
+                "responsive images"
+            ],
+            "date": "January 2024",
+            "url": "https://www.jitsedekeyser.be/devine/trainworld",
+            "moreUrls": [
+                {
+                    "type": "Github",
+                    "url": "https://github.com/jitseD/trainworld"
+                }
+            ],
             "highlighted": true,
             "results": [
                 {
-                    "type": "web",
+                    "type": "responsive",
                     "media": [
                         {
                             "mediaType": "img",
-                            "filePath": "projects/campaign/web-1",
+                            "filePath": "projects/trainworld/desktop-1",
                             "fileExtension": "jpg",
-                            "alt": "website screenshot 1",
+                            "alt": "website desktop screenshot 1",
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
                                     200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/tablet-1",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 1",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/mobile-1",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 1",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
                                     400,
                                     600,
                                     800,
@@ -45,14 +99,55 @@
                         },
                         {
                             "mediaType": "img",
-                            "filePath": "projects/campaign/web-2",
+                            "filePath": "projects/trainworld/desktop-2",
                             "fileExtension": "jpg",
-                            "alt": "website screenshot 2",
+                            "alt": "website desktop screenshot 2",
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
                                     200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/tablet-2",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 2",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/mobile-2",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 2",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
                                     400,
                                     600,
                                     800,
@@ -62,14 +157,55 @@
                         },
                         {
                             "mediaType": "img",
-                            "filePath": "projects/campaign/web-3",
+                            "filePath": "projects/trainworld/desktop-3",
                             "fileExtension": "jpg",
-                            "alt": "website screenshot 3",
+                            "alt": "website desktop screenshot 3",
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
                                     200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/tablet-3",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 3",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/mobile-3",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 3",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
                                     400,
                                     600,
                                     800,
@@ -79,14 +215,55 @@
                         },
                         {
                             "mediaType": "img",
-                            "filePath": "projects/campaign/web-4",
+                            "filePath": "projects/trainworld/desktop-4",
                             "fileExtension": "jpg",
-                            "alt": "website screenshot 4",
+                            "alt": "website desktop screenshot 4",
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
                                     200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600,
+                                    2000,
+                                    2700
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/tablet-4",
+                            "fileExtension": "jpg",
+                            "alt": "website tablet screenshot 4",
+                            "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000,
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/trainworld/mobile-4",
+                            "fileExtension": "jpg",
+                            "alt": "website mobile screenshot 4",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
                                     400,
                                     600,
                                     800,
@@ -96,80 +273,9 @@
                         },
                         {
                             "mediaType": "video",
-                            "filePath": "projects/campaign/web",
+                            "filePath": "projects/trainworld/video",
                             "fileExtension": "mp4",
-                            "alt": "website video"
-                        }
-                    ]
-                },
-                {
-                    "type": "socials",
-                    "media": [
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/campaign/socials-1",
-                            "fileExtension": "jpg",
-                            "alt": "instagram story 1",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/campaign/socials-2",
-                            "fileExtension": "jpg",
-                            "alt": "instagram story 2",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/campaign/socials-3",
-                            "fileExtension": "jpg",
-                            "alt": "instagram story 3",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/campaign/socials-4",
-                            "fileExtension": "jpg",
-                            "alt": "instagram story 4",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "video",
-                            "filePath": "projects/campaign/socials",
-                            "fileExtension": "mp4",
-                            "alt": "instagram story video"
+                            "alt": "responsive website video"
                         }
                     ]
                 }
@@ -191,8 +297,8 @@
             ],
             "date": "December 2023",
             "url": "https://www.figma.com/proto/5vYln2cRUAeJCv9i04jq63/Lotus-Bakeries-Conference...",
-            "behanceUrl": null,
-            "highlighted": true,
+            "moreUrls": null,
+            "highlighted": false,
             "results": [
                 {
                     "type": "responsive",
@@ -440,6 +546,278 @@
             ]
         },
         {
+            "id": "evian",
+            "name": "Evian Social Media",
+            "description": "The project focused on designing an Instagram story for Evian, the official sponsor of the 2024 Paris Olympics. The concept visually combined sports and premium hydration, maintaining brand consistency while showcasing Evian's role in keeping athletes refreshed.",
+            "tags": [
+                {
+                    "tag": "social media",
+                    "tagType": "branding"
+                },
+                {
+                    "tag": "animation",
+                    "tagType": "motion"
+                }
+            ],
+            "tools": [
+                "Figma",
+                "Photoshop",
+                "After Effects"
+            ],
+            "date": "April 2024",
+            "url": null,
+            "moreUrls": null,
+            "highlighted": true,
+            "results": [
+                {
+                    "type": "socials",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-1",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 1",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-2",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 2",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-3",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 3",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/evian/socials-4",
+                            "fileExtension": "jpg",
+                            "alt": "overview of instagram stories",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/evian/socials",
+                            "fileExtension": "mp4",
+                            "alt": "instagram story video"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "campaign",
+            "name": "Back\u00ADpacks Without Limits",
+            "description": "#BackpacksWithoutLimits is a digital campaign powered by Lotus Bakeries to fight educational poverty in flemish schools. The project involved creating a campaign, designing the website and crafting social media mockups to encourage community involvement and sharing through interactive storytelling.",
+            "tags": [
+                {
+                    "tag": "social media",
+                    "tagType": "branding"
+                },
+                {
+                    "tag": "web design",
+                    "tagType": "design"
+                }
+            ],
+            "tools": [
+                "Figma",
+                "Photoshop"
+            ],
+            "date": "November 2023",
+            "url": "https://www.figma.com/proto/h9KjN734q86iuMv3jcyEMT/Lotus-Bakeries-Campaign?page-id=2%3A5&node-id=100-964&node-type=canvas&viewport=674%2C491%2C0.04&t=l5qd7gsdM3AgfiEN-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=154%3A170",
+            "moreUrls": null,
+            "highlighted": false,
+            "results": [
+                {
+                    "type": "web",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-1",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 1",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-2",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 2",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-3",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 3",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/web-4",
+                            "fileExtension": "jpg",
+                            "alt": "website screenshot 4",
+                            "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    400,
+                                    600,
+                                    800,
+                                    1000
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/campaign/web",
+                            "fileExtension": "mp4",
+                            "alt": "website video"
+                        }
+                    ]
+                },
+                {
+                    "type": "socials",
+                    "media": [
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-1",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 1",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-2",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 2",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-3",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 3",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "img",
+                            "filePath": "projects/campaign/socials-4",
+                            "fileExtension": "jpg",
+                            "alt": "instagram story 4",
+                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
+                            "srcSet": {
+                                "type": "avif",
+                                "sizes": [
+                                    200,
+                                    300,
+                                    400
+                                ]
+                            }
+                        },
+                        {
+                            "mediaType": "video",
+                            "filePath": "projects/campaign/socials",
+                            "fileExtension": "mp4",
+                            "alt": "instagram story video"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "kickstarter",
             "name": "Kick\u00ADstarter Promo Video",
             "description": "The goal of the project was to create a short promo video for a kickstarter campaign. The video highlights the product's functionality and its engaging customer experience. Get ready to discover the “Make Your Own Pocket Knife Kit” Kickstarter.",
@@ -535,103 +913,6 @@
                             "filePath": "projects/kickstarter/web",
                             "fileExtension": "mp4",
                             "alt": "promo video"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "evian",
-            "name": "Evian Social Media",
-            "description": "The project focused on designing an Instagram story for Evian, the official sponsor of the 2024 Paris Olympics. The concept visually combined sports and premium hydration, maintaining brand consistency while showcasing Evian's role in keeping athletes refreshed.",
-            "tags": [
-                {
-                    "tag": "social media",
-                    "tagType": "branding"
-                },
-                {
-                    "tag": "animation",
-                    "tagType": "motion"
-                }
-            ],
-            "tools": [
-                "Figma",
-                "Photoshop",
-                "After Effects"
-            ],
-            "date": "April 2024",
-            "url": null,
-            "behanceUrl": null,
-            "highlighted": true,
-            "results": [
-                {
-                    "type": "socials",
-                    "media": [
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/evian/socials-1",
-                            "fileExtension": "jpg",
-                            "alt": "instagram story 1",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/evian/socials-2",
-                            "fileExtension": "jpg",
-                            "alt": "instagram story 2",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/evian/socials-3",
-                            "fileExtension": "jpg",
-                            "alt": "instagram story 3",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "img",
-                            "filePath": "projects/evian/socials-4",
-                            "fileExtension": "jpg",
-                            "alt": "overview of instagram stories",
-                            "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
-                            "srcSet": {
-                                "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400
-                                ]
-                            }
-                        },
-                        {
-                            "mediaType": "video",
-                            "filePath": "projects/evian/socials",
-                            "fileExtension": "mp4",
-                            "alt": "instagram story video"
                         }
                     ]
                 }

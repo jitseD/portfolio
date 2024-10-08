@@ -344,6 +344,15 @@ img {
     }
 }
 
+.hover--arrow,
+.hover--back,
+.hover--send,
+.hover--external,
+.hover--play,
+.hover--pause {
+    cursor: none;
+}
+
 /* -------------------------------------------------- after elements -------------------------------------------------- */
 
 main>section {
@@ -1045,7 +1054,7 @@ footer * {
 
 .detail__tag {
     background-color: var(--c-black);
-    border: var(--c-white) 1px solid;
+    border: var(--c-white) 1px dashed;
     padding: 0.75rem 1.5rem;
     height: max-content;
 }
@@ -1093,16 +1102,19 @@ footer * {
     width: 100%;
 }
 
-.behance__wrapper {
+.url__wrapper {
     display: flex;
     flex-direction: column;
-    gap: var(--s-m);
-    align-items: center;
-    margin-block-start: var(--s-xl);
+    gap: var(--s-s);
+    margin-block-start: var(--s-l);
 }
 
-.behance__wrapper p {
-    text-align: center;
+.url__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--s-m);
+    place-items: center;
 }
 
 .more {

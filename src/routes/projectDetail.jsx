@@ -24,6 +24,9 @@ const ProjectDetail = () => {
     const prevMedia = getMediaObject(prevProject.id);
     const nextMedia = getMediaObject(nextProject.id);
 
+    console.log(project.moreUrls);
+
+
     return (
         <main className="main main--detail">
             <Link className="detail__nav hover--back" to={from}>
@@ -55,6 +58,23 @@ const ProjectDetail = () => {
                         </svg>
                     </a>
                 }
+                {project.moreUrls && (
+                    <div className="url__wrapper">
+                        <p>Learn more about the project</p>
+                        <ul className="url__list">
+                            {project.moreUrls.map((moreUrl, index) => (
+                                <li className="url__item hover--external" key={index}>
+                                    <a className="button" href={moreUrl.url} target="_blank">
+                                        <p>go to {moreUrl.type}</p>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                            <path d="M28.999 1L7.99957 21.9997M28.999 1H18.4994M28.999 1L28.9996 11.5M11.4996 4.5H0.999573L1.00066 29H25.4996V18.5" stroke="#F2F2F2" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
             </section>
             <section className="results">
                 <h2 className="results__title outline emph">Results</h2>
@@ -67,17 +87,6 @@ const ProjectDetail = () => {
                         </div>
                     ))}
                 </div>
-                {project.behanceUrl && (
-                    <div className="behance__wrapper">
-                        <p>Learn more about the project on Behance</p>
-                        <a className="button hover--external" href={project.behanceUrl} target="_blank">
-                            <p>go to behance</p>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M28.999 1L7.99957 21.9997M28.999 1H18.4994M28.999 1L28.9996 11.5M11.4996 4.5H0.999573L1.00066 29H25.4996V18.5" stroke="#F2F2F2" />
-                            </svg>
-                        </a>
-                    </div>
-                )}
             </section>
             <section className="more">
                 <h2 className="more__title outline emph">More</h2>
