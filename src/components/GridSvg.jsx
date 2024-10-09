@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,61 +8,67 @@ const GridSvg = () => {
     const [screenWidth, setScreenWidth] = useState(null);
     const gridRef = useRef(null);
     const parentRef = useRef(null);
+    const scrollTriggerRef = useRef(null);
 
-    useEffect(() => {
-        const handleScreenResize = () => {
-            setScreenWidth(window.innerWidth);
+    const getGridSize = useCallback(() => {
+        const gridSizes = {
+            desktop: { width: 1800, height: 2425 },
+            tablet: { width: 745, height: 1906 },
+            mobile: { width: 360, height: 1931 }
         }
 
-        window.addEventListener("resize", handleScreenResize);
-        handleScreenResize();
+        if (screenWidth >= 1050) return gridSizes.desktop;
+        if (screenWidth >= 750) return gridSizes.tablet;
+        return gridSizes.mobile;
+    }, [screenWidth]);
 
-        return () => window.removeEventListener("resize", handleScreenResize);
-
-    }, [])
 
     useEffect(() => {
-        if (gridRef.current && parentRef.current) {
-            const gridSize = {
-                desktop: { width: 1800, height: 2425 },
-                tablet: { width: 745, height: 1906 },
-                mobile: { width: 360, height: 1931 }
-            }
+        window.addEventListener("resize", setScreenWidth(window.innerWidth));
+        return () => window.removeEventListener("resize", setScreenWidth(window.innerWidth));
+    }, []);
 
-            let relativeSize = {}
+    useEffect(() => {
+        const configureGSAPAnimation = () => {
+            if (gridRef.current && parentRef.current) {
+                const { height, width } = getGridSize();
+                const gridHeight = (height / width) * screenWidth;
 
-            if (screenWidth > 1050) relativeSize = gridSize.desktop
-            else if (screenWidth > 750) relativeSize = gridSize.tablet
-            else relativeSize = gridSize.mobile
-
-            const gridHeight = (relativeSize.height / relativeSize.width) * screenWidth;
-
-            const trigger = gsap.fromTo(gridRef.current,
-                { top: 0 },
-                {
-                    top: () => parentRef.current.offsetHeight - gridHeight,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: "main",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: true,
+                scrollTriggerRef.current = gsap.fromTo(gridRef.current,
+                    { top: 0 },
+                    {
+                        top: () => parentRef.current.offsetHeight - gridHeight,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: "main",
+                            start: "top top",
+                            end: "bottom bottom",
+                            scrub: true,
+                        }
                     }
-                }
-            )
-
-            const timeoutId = setTimeout(() => ScrollTrigger.refresh(), 100);
-
-            return () => {
-                clearTimeout(timeoutId);
-                trigger.scrollTrigger?.kill();
-            };
+                )
+            }
         }
-    }, [gridRef, screenWidth]);
+
+        const resizeObserver = new ResizeObserver(() => configureGSAPAnimation());
+
+        if (parentRef.current) resizeObserver.observe(parentRef.current);
+
+        configureGSAPAnimation();
+
+        return () => {
+            if (scrollTriggerRef.current) {
+                scrollTriggerRef.current.kill();
+                scrollTriggerRef.current = null;
+            }
+            resizeObserver.disconnect();
+        }
+
+    }, [getGridSize, screenWidth]);
 
     return (
         <div className="grid__wrapper" ref={parentRef}>
-            {screenWidth > 1050 ? (
+            {screenWidth >= 1050 ? (
 
                 <svg className="grid" width="1800" height="2425" viewBox="0 0 1800 2425" fill="none" ref={gridRef}>
                     <path d="M1638 1V2425" stroke="#F2F2F2" />
@@ -75,7 +81,7 @@ const GridSvg = () => {
                     <path d="M1797.5 1916.96H0.00044632" stroke="#F2F2F2" />
                     <path d="M1797.5 2234.02H0.00044632" stroke="#F2F2F2" />
                 </svg>
-            ) : screenWidth > 750 ? (
+            ) : screenWidth >= 750 ? (
                 <svg className="grid" width="745" height="1906" viewBox="0 0 745 1906" fill="none" ref={gridRef}>
                     <path d="M603 0V1906" stroke="#F2F2F2" />
                     <path d="M745 169L0.999989 169" stroke="#F2F2F2" />

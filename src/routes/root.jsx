@@ -25,10 +25,7 @@ const Root = () => {
             duration: 1,
         })
 
-        return () => {
-            parallaxText.kill();
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        }
+        return () => parallaxText.kill();
     }, []);
 
     return (
