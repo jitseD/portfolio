@@ -274,6 +274,10 @@ img {
 
 /* -------------------------------------------------- cursor -------------------------------------------------- */
 
+* {
+    cursor: none !important;
+}
+
 .cursor {
     position: fixed;
     width: 0.5rem;
@@ -344,13 +348,13 @@ img {
     }
 }
 
-.hover--arrow,
-.hover--back,
-.hover--send,
-.hover--external,
-.hover--play,
-.hover--pause {
-    cursor: none;
+.hover--arrow:hover,
+.hover--back:hover,
+.hover--send:hover,
+.hover--external:hover,
+.hover--play:hover,
+.hover--pause:hover {
+    cursor: none !important;
 }
 
 /* -------------------------------------------------- after elements -------------------------------------------------- */
@@ -1017,6 +1021,18 @@ footer * {
 
 .projects__list .project.right {
     align-self: flex-end;
+}
+
+.github {
+    padding-block: var(--s-l);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: var(--s-m);
+}
+
+.github p {
+    text-align: center;
 }
 
 /* -------------------------------------------------- detail -------------------------------------------------- */
@@ -1962,6 +1978,19 @@ footer * {
         }
     }
 
+    /* -------------------------------------------------- projects -------------------------------------------------- */
+
+    .github {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: flex-start;
+    }
+
+    .github p {
+        text-align: end;
+        justify-self: flex-end;
+        width: max-content;
+    }
+
     /* -------------------------------------------------- detail -------------------------------------------------- */
 
     .info {
@@ -2111,6 +2140,12 @@ footer * {
     .project__info {
         width: 50vw;
         max-width: 720px;
+    }
+
+    /* -------------------------------------------------- projects -------------------------------------------------- */
+
+    .github {
+        transform: translateY(45%);
     }
 
     /* -------------------------------------------------- detail -------------------------------------------------- */

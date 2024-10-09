@@ -9,7 +9,11 @@ const Cursor = () => {
             $cursor.style.top = `${e.clientY}px`;
         }
 
-        document.addEventListener(`mousemove`, handleMouseMove);
+        window.addEventListener(`mousemove`, handleMouseMove);
+
+        return () => {
+            window.removeEventListener(`mousemove`, handleMouseMove)
+        }
     })
 
     return (

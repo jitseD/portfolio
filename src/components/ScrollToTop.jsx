@@ -17,7 +17,7 @@ const ScrollToTop = (props) => {
         const isPreviousProject = previousPath.includes('/projects/');
 
         if (isCurrentProject && isPreviousProject) {
-            if (lenis)  lenis.scrollTo(0, { duration: 0 });
+            if (lenis) lenis.scrollTo(0, { duration: 0 });
         } else {
             if (lenis) {
                 lenis.stop();
