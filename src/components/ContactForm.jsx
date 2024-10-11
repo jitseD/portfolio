@@ -18,7 +18,7 @@ const ContactForm = () => {
             );
     };
 
-    useEffect(()=> cursorHover(`send`))
+    useEffect(() => cursorHover(`send`))
 
     return (
         <form className="form" ref={form} onSubmit={sendEmail}>
@@ -34,12 +34,12 @@ const ContactForm = () => {
                 <textarea className="form__input" name="message" placeholder="Hellow" required />
                 <span className="form__label">Your message *</span>
             </label>
-            <div className="form__submit button hover--send">
+            <label className="form__submit button hover--send">
                 <input className="form__button" type="submit" value="Send" />
                 <svg width="35" height="32" viewBox="0 0 35 32" fill="none">
                     <path d="M33.3602 16.0003L2.00022 2L9.83994 16M33.3602 16.0003L9.83994 16M33.3602 16.0003L2 30L9.83994 16" stroke="#0D0D0D" />
                 </svg>
-            </div>
+            </label>
         </form>
     );
 };

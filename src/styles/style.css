@@ -1614,6 +1614,7 @@ footer * {
     gap: var(--s-m);
     position: relative;
     container-type: inline-size;
+    z-index: 20;
 }
 
 .form::after {

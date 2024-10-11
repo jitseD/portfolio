@@ -24,9 +24,6 @@ const ProjectDetail = () => {
     const prevMedia = getMediaObject(prevProject.id);
     const nextMedia = getMediaObject(nextProject.id);
 
-    console.log(project.moreUrls);
-
-
     return (
         <main className="main main--detail">
             <Link className="detail__nav hover--back" to={from}>
