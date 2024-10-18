@@ -33,7 +33,7 @@ const About = () => {
                 <h2 className="bio__title emph">I&#39;m Jitse</h2>
                 <em className="bio__hey hey emph outline">Hey</em>
                 <div className="bio__text">
-                    <p>I&#39;m a third-year student in <strong>Digital Design and Development</strong> at Howest in Kortrijk, Belgium. Currently, I&#39;m on Erasmus in Norway, studying IT at USN <strong>exploring my interests</strong> within the vast field of IT and development.</p>
+                    <p>I&#39;m a third-year student in <strong>Digital Design and Development</strong> at Howest in Kortrijk, Belgium. Currently I&#39;m on exchange in Norway, studying IT at USN <strong>exploring my interests</strong> within the vast field of IT and development.</p>
                     <p>I&#39;m driven by a passion for <strong>detail</strong> and a commitment to creating <strong>unique</strong>, <strong>high-quality</strong> work. I continually seek to improve and expand my knowledge, <strong>eager to learn</strong> in this ever-evolving industry.</p>
                     <p>My journey into digital design and development started with a curiosity about how creativity and technology intersect. My studies and experiences abroad are <strong>broadening my perspective</strong> and shaping my ability to approach problems from various angles, enabling me to develop innovative, user-centered solutions.</p>
                 </div>
