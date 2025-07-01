@@ -16,9 +16,7 @@ const Projects = () => {
         if (!projects) return;
         const tagOrder = ['development', 'design', 'branding', 'motion'];
 
-        const allTagTypes = projectsData.projects.flatMap((project) =>
-            project.tags.map((tag) => tag.tagType)
-        );
+        const allTagTypes = projectsData.projects.flatMap((project) => project.tags.map((tag) => tag.tagType));
         const uniqueTags = Array.from(new Set(allTagTypes));
 
         const sortedTags = uniqueTags
@@ -55,12 +53,7 @@ const Projects = () => {
                 <ul className="filter__tags">
                     {tags &&
                         tags.map((tag) => (
-                            <FilterTag
-                                key={tag}
-                                name={tag}
-                                filter={filter}
-                                onClick={handleFilterClick}
-                            />
+                            <FilterTag key={tag} name={tag} filter={filter} onClick={handleFilterClick} />
                         ))}
                 </ul>
             </section>
@@ -86,18 +79,9 @@ const Projects = () => {
                             for more development projects, <br />
                             check out my github
                         </p>
-                        <a
-                            className="button"
-                            href="https://github.com/jitseD"
-                            target="_blank"
-                        >
+                        <a className="button" href="https://github.com/jitseD" target="_blank">
                             <p>go to GitHub</p>
-                            <svg
-                                width="30"
-                                height="30"
-                                viewBox="0 0 30 30"
-                                fill="none"
-                            >
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <path
                                     d="M28.999 1L7.99957 21.9997M28.999 1H18.4994M28.999 1L28.9996 11.5M11.4996 4.5H0.999573L1.00066 29H25.4996V18.5"
                                     stroke="#F2F2F2"

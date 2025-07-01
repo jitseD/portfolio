@@ -9,20 +9,13 @@ const ContactSection = () => {
                 </h2>
                 <div className="contact__content">
                     <p className="contact__cta">
-                        Got a question, idea, or opportunity? Or just want to
-                        say hi? Don&#39;t hesitate to contact me!
+                        Got a question, idea, or opportunity? Or just want to say hi? Don&#39;t hesitate to contact me!
                     </p>
                     <div className="contact__intership">
                         <p>
-                            <strong>
-                                Looking for a passionate designer & developer to
-                                join your team?
-                            </strong>
+                            <strong>Looking for a passionate designer & developer to join your team?</strong>
                         </p>
-                        <p>
-                            I&#39;m seeking an internship from February 2025
-                            through May 2025.
-                        </p>
+                        <p>I&#39;m seeking an internship from February 2025 through May 2025.</p>
                     </div>
                     <ContactForm />
                 </div>

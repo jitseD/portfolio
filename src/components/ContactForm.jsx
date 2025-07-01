@@ -27,13 +27,7 @@ const ContactForm = () => {
     return (
         <form className="form" ref={form} onSubmit={sendEmail}>
             <label className="label__wrapper">
-                <input
-                    className="form__input"
-                    type="text"
-                    name="user_name"
-                    placeholder="John Doe"
-                    required
-                />
+                <input className="form__input" type="text" name="user_name" placeholder="John Doe" required />
                 <span className="form__label">Your name *</span>
             </label>
             <label className="label__wrapper">
@@ -47,12 +41,7 @@ const ContactForm = () => {
                 <span className="form__label">Your email *</span>
             </label>
             <label className="label__wrapper label__wrapper--textarea">
-                <textarea
-                    className="form__input"
-                    name="message"
-                    placeholder="Hellow"
-                    required
-                />
+                <textarea className="form__input" name="message" placeholder="Hellow" required />
                 <span className="form__label">Your message *</span>
             </label>
             <label className="form__submit button hover--send">

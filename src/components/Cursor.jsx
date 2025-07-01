@@ -44,16 +44,8 @@ const Cursor = () => {
                 d="M37.4995 12.5L18.75 31.2497M37.4995 12.5H28.1249M37.4995 12.5L37.5 21.875M21.875 15.625H12.5L12.501 37.5H34.375V28.125"
                 stroke="#F2F2F2"
             />
-            <path
-                className="cursor__play"
-                d="M39.6243 25L15.3756 39L15.3756 11L39.6243 25Z"
-                stroke="#F2F2F2"
-            />
-            <path
-                className="cursor__pause"
-                d="M18 13V37M32 13V37"
-                stroke="#F2F2F2"
-            />
+            <path className="cursor__play" d="M39.6243 25L15.3756 39L15.3756 11L39.6243 25Z" stroke="#F2F2F2" />
+            <path className="cursor__pause" d="M18 13V37M32 13V37" stroke="#F2F2F2" />
         </svg>
     );
 };

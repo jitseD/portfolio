@@ -1,9 +1,4 @@
-import {
-    RiInstagramLine,
-    RiBehanceLine,
-    RiGithubLine,
-    RiLinkedinLine,
-} from 'react-icons/ri';
+import { RiInstagramLine, RiBehanceLine, RiGithubLine, RiLinkedinLine } from 'react-icons/ri';
 
 const Socials = () => {
     return (
@@ -19,21 +14,13 @@ const Socials = () => {
                 </a>
             </li>
             <li className="social__item">
-                <a
-                    className="social__link hover--circle"
-                    href="https://www.behance.net/jitsedekeyser"
-                    target="_blank"
-                >
+                <a className="social__link hover--circle" href="https://www.behance.net/jitsedekeyser" target="_blank">
                     <RiBehanceLine className="social__icon" />
                     Behance
                 </a>
             </li>
             <li className="social__item">
-                <a
-                    className="social__link hover--circle"
-                    href="https://github.com/jitseD"
-                    target="_blank"
-                >
+                <a className="social__link hover--circle" href="https://github.com/jitseD" target="_blank">
                     <RiGithubLine className="social__icon" />
                     GitHub
                 </a>

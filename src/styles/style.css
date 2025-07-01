@@ -100,10 +100,10 @@ html {
 /* -------------------------------------------------- basics -------------------------------------------------- */
 
 html,
-main,
 header,
 footer {
     background-color: var(--c-black);
+    background-image: url(../assets/img/texture.jpg);
 }
 
 .grid__wrapper {
@@ -437,8 +437,7 @@ main > section {
     width: 1.5rem;
     height: 1px;
     border-block-end: var(--c-white) 1px solid;
-    transition: var(--t-fast) opacity, var(--t-fast) rotate,
-        var(--t-fast) transform, var(--t-fast) border;
+    transition: var(--t-fast) opacity, var(--t-fast) rotate, var(--t-fast) transform, var(--t-fast) border;
 }
 
 .hamburger:first-child {
@@ -866,8 +865,7 @@ footer * {
     width: 55vw;
     max-width: 300px;
     aspect-ratio: 1;
-    transition: var(--t-slow) transform, var(--t-slow) filter,
-        var(--t-slow) width, var(--t-slow) max-width;
+    transition: var(--t-slow) transform, var(--t-slow) filter, var(--t-slow) width, var(--t-slow) max-width;
 }
 
 .project__img--overview {
@@ -1003,8 +1001,7 @@ footer * {
     background-color: var(--c-black);
     border: var(--c-white) 1px dashed;
     border-radius: 100px;
-    transition: var(--t-fast) background-color, var(--t-fast) color,
-        var(--t-fast) border;
+    transition: var(--t-fast) background-color, var(--t-fast) color, var(--t-fast) border;
     width: fit-content;
 }
 
@@ -1489,8 +1486,7 @@ footer * {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: var(--t-fast) top, var(--t-fast) left,
-            var(--t-fast) transform;
+        transition: var(--t-fast) top, var(--t-fast) left, var(--t-fast) transform;
     }
 
     .category__wrapper {
@@ -1657,8 +1653,7 @@ footer * {
     position: absolute;
     left: 0;
     top: var(--s-2xs);
-    transition: var(--t-fast) top, var(--t-fast) left, var(--t-fast) font-size,
-        var(--t-fast) opacity;
+    transition: var(--t-fast) top, var(--t-fast) left, var(--t-fast) font-size, var(--t-fast) opacity;
 }
 
 .form__input:focus + .form__label {
@@ -1910,9 +1905,7 @@ footer * {
     }
 
     main {
-        margin-block-end: calc(
-            2 * var(--s-s) + 3 * var(--f-s) + 2 * var(--s-xs)
-        );
+        margin-block-end: calc(2 * var(--s-s) + 3 * var(--f-s) + 2 * var(--s-xs));
     }
 }
 

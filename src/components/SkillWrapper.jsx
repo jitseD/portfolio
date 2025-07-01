@@ -7,26 +7,15 @@ const SkillWrapper = ({ category, skills, currentSkill, onClick }) => {
     useEffect(() => cursorHover(`circle`));
     return (
         <li
-            className={`skill__wrapper skill__wrapper--${category.replace(
-                /\s+/g,
-                '-'
-            )} ${currentSkill == category ? `open` : ``} hover--circle`}
+            className={`skill__wrapper skill__wrapper--${category.replace(/\s+/g, '-')} ${
+                currentSkill == category ? `open` : ``
+            } hover--circle`}
             onClick={() => onClick(category)}
         >
             <div className="category__wrapper">
                 <h4 className="skill__category emph">{category}</h4>
-                <svg
-                    className="toggle__img"
-                    width="16"
-                    height="9"
-                    viewBox="0 0 16 9"
-                    fill="none"
-                >
-                    <path
-                        d="M15 1L8.0002 7.9998L1 1.00015"
-                        stroke="#F2F2F2"
-                        strokeWidth="1.5px"
-                    />
+                <svg className="toggle__img" width="16" height="9" viewBox="0 0 16 9" fill="none">
+                    <path d="M15 1L8.0002 7.9998L1 1.00015" stroke="#F2F2F2" strokeWidth="1.5px" />
                 </svg>
             </div>
             <ul className={`skills skills--${category.replace(/\s+/g, '-')}`}>

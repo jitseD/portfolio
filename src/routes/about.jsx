@@ -34,27 +34,19 @@ const About = () => {
                 <em className="bio__hey hey emph outline">Hey</em>
                 <div className="bio__text">
                     <p>
-                        I recently graduated from the{' '}
-                        <strong>Digital Design and Development</strong> program
-                        at Howest in Kortrijk, Belgium. As part of my studies, I
-                        went on Erasmus to Norway, where I studied IT at USN and
-                        explored my interests in the broader field of
-                        development and technology.
+                        I recently graduated from the <strong>Digital Design and Development</strong> program at Howest
+                        in Kortrijk, Belgium. As part of my studies, I went on Erasmus to Norway, where I studied IT at
+                        USN and explored my interests in the broader field of development and technology.
                     </p>
                     <p>
-                        In my final year, I completed a{' '}
-                        <strong>14-week internship</strong> at Antenna in Ghent.
-                        There, I gained <strong>hands-on experience</strong> by
-                        working closely with a team, taking ownership of
-                        projects, and developing both my technical and creative
-                        skills.
+                        In my final year, I completed a <strong>14-week internship</strong> at Antenna in Ghent. There,
+                        I gained <strong>hands-on experience</strong> by working closely with a team, taking ownership
+                        of projects, and developing both my technical and creative skills.
                     </p>
                     <p>
-                        I&#39;m passionate about <strong>detail</strong> and
-                        committed to creating <strong>unique</strong>,{' '}
-                        <strong>high-quality</strong> work. Studying abroad and
-                        completing an internship gave me a broader perspective
-                        on the industry. It taught me to adapt and collaborate,
+                        I&#39;m passionate about <strong>detail</strong> and committed to creating{' '}
+                        <strong>unique</strong>, <strong>high-quality</strong> work. Studying abroad and completing an
+                        internship gave me a broader perspective on the industry. It taught me to adapt and collaborate,
                         but most importantly to <strong>keep learning</strong>.
                     </p>
                 </div>
@@ -79,11 +71,7 @@ const About = () => {
                 <h2 className="visually-hidden">Skillsett</h2>
                 {data ? (
                     Object.entries(data).map(([type, skills]) => (
-                        <SkillsetWrapper
-                            key={type}
-                            type={type}
-                            skills={skills}
-                        />
+                        <SkillsetWrapper key={type} type={type} skills={skills} />
                     ))
                 ) : (
                     <Loader message="Loading skills..." />

@@ -26,9 +26,7 @@ const Home = () => {
     const [projects, setProjects] = useState(null);
     useEffect(() => setProjects(projectsData.projects), []);
 
-    const highlightedProjects = projects
-        ? projects.filter((project) => project.highlighted)
-        : [];
+    const highlightedProjects = projects ? projects.filter((project) => project.highlighted) : [];
 
     return (
         <main className="main main--home">
@@ -63,12 +61,9 @@ const Home = () => {
                 <h2 className="intro__title emph">I&#39;m Jitse</h2>
                 <em className="intro__hey hey emph outline">Hey</em>
                 <p className="intro__text">
-                    I recently graduated in{' '}
-                    <strong>Digital Design and Development</strong> from Howest
-                    in Belgium. After studying abroad and completing a
-                    semester-long internship, I&#39;m ready to step into the
-                    professional world, combining creativity and technology to
-                    build unique and innovative projects.
+                    I recently graduated in <strong>Digital Design and Development</strong> from Howest in Belgium.
+                    After studying abroad and completing a semester-long internship, I&#39;m ready to step into the
+                    professional world, combining creativity and technology to build unique and innovative projects.
                 </p>
                 <div className="intro__imgs stacked__imgs">
                     <img
@@ -86,10 +81,7 @@ const Home = () => {
                         alt="Jitse Dekeyser"
                     />
                 </div>
-                <Link
-                    className="intro__button button hover--arrow"
-                    to={`${import.meta.env.BASE_URL}about`}
-                >
+                <Link className="intro__button button hover--arrow" to={`${import.meta.env.BASE_URL}about`}>
                     <p>more about me</p>
                     <svg width="57" height="30" viewBox="0 0 57 30" fill="none">
                         <path
@@ -117,10 +109,7 @@ const Home = () => {
                         <Loader message="Loading recent projects..." />
                     )}
                 </ul>
-                <Link
-                    className="recent__button button hover--arrow"
-                    to={`${import.meta.env.BASE_URL}projects`}
-                >
+                <Link className="recent__button button hover--arrow" to={`${import.meta.env.BASE_URL}projects`}>
                     <p>more projects</p>
                     <svg width="57" height="30" viewBox="0 0 57 30" fill="none">
                         <path

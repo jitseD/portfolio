@@ -6,12 +6,7 @@ const FilterTag = ({ name, filter, onClick }) => {
     useEffect(() => cursorHover(`circle`));
 
     return (
-        <li
-            className={`filter__tag ${
-                name == filter && `active`
-            } hover--circle`}
-            onClick={onClick}
-        >
+        <li className={`filter__tag ${name == filter && `active`} hover--circle`} onClick={onClick}>
             {name}
         </li>
     );

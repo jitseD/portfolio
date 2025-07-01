@@ -16,17 +16,13 @@ const Media = ({ className, media }) => {
         if (media.mediaType === 'img' && media.srcSet) {
             const loadMediaAsync = async () => {
                 const srcSetPromises = media.srcSet.sizes.map(async (size) => {
-                    const mediaSrc = await loadMedia(
-                        `${media.filePath}-${size}.${media.srcSet.type}`
-                    );
+                    const mediaSrc = await loadMedia(`${media.filePath}-${size}.${media.srcSet.type}`);
                     return `${mediaSrc} ${size}w`;
                 });
 
                 const srcSetArray = await Promise.all(srcSetPromises);
                 const srcSetStr = srcSetArray.join(', ');
-                const baseImgPath = await loadMedia(
-                    `${media.filePath}-${media.srcSet.sizes[0]}.${media.srcSet.type}`
-                );
+                const baseImgPath = await loadMedia(`${media.filePath}-${media.srcSet.sizes[0]}.${media.srcSet.type}`);
 
                 setMediaSrcSet(srcSetStr);
                 setMediaImgPath(baseImgPath);
@@ -36,9 +32,7 @@ const Media = ({ className, media }) => {
         } else {
             const loadMediaAsync = async () => {
                 if (media.filePath) {
-                    const mediaSrc = await loadMedia(
-                        `${media.filePath}.${media.fileExtension}`
-                    );
+                    const mediaSrc = await loadMedia(`${media.filePath}.${media.fileExtension}`);
                     setMediaImgPath(mediaSrc);
                 } else {
                     setMediaImgPath(null);
@@ -92,13 +86,7 @@ const Media = ({ className, media }) => {
     const handleVideoClick = () => setControlsVisible(true);
 
     return media.mediaType === 'img' ? (
-        <img
-            className={className}
-            srcSet={mediaSrcSet}
-            sizes={media.sizes}
-            src={mediaImgPath}
-            alt={media.alt}
-        />
+        <img className={className} srcSet={mediaSrcSet} sizes={media.sizes} src={mediaImgPath} alt={media.alt} />
     ) : (
         media.mediaType === 'video' && (
             <video
