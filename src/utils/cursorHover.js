@@ -2,7 +2,7 @@ export const cursorHover = (type) => {
     const $cursor = document.querySelector(`.cursor`);
     const elements = document.querySelectorAll(`.hover--${type}`);
 
-    const handleEnterLink = e => {
+    const handleEnterLink = (e) => {
         let className = type;
         if (type === `play`) {
             if (!e.target.paused) className = `pause`;
@@ -11,18 +11,18 @@ export const cursorHover = (type) => {
         }
 
         $cursor.classList.add(`hover--${className}`);
-    }
+    };
 
-    const handleLeaveLink = e => {
+    const handleLeaveLink = (e) => {
         if (type === `play`) {
             e.target.removeEventListener('play', handlePlayPause);
             e.target.removeEventListener('pause', handlePlayPause);
         }
 
         removerHoverClasses();
-    }
+    };
 
-    const handlePlayPause = e => {
+    const handlePlayPause = (e) => {
         if (e.type === 'play') {
             $cursor.classList.remove('hover--play');
             $cursor.classList.add('hover--pause');
@@ -30,13 +30,25 @@ export const cursorHover = (type) => {
             $cursor.classList.remove('hover--pause');
             $cursor.classList.add('hover--play');
         }
-    }
+    };
 
-    elements.forEach($link => $link.addEventListener(`mouseenter`, handleEnterLink));
-    elements.forEach($link => $link.addEventListener(`mouseleave`, handleLeaveLink));
-}
+    elements.forEach(($link) =>
+        $link.addEventListener(`mouseenter`, handleEnterLink)
+    );
+    elements.forEach(($link) =>
+        $link.addEventListener(`mouseleave`, handleLeaveLink)
+    );
+};
 
 export const removerHoverClasses = () => {
     const $cursor = document.querySelector(`.cursor`);
-    $cursor.classList.remove(`hover--arrow`, `hover--back`, `hover--send`, `hover--external`, `hover--play`, `hover--pause`, `hover--circle`);
-}
+    $cursor.classList.remove(
+        `hover--arrow`,
+        `hover--back`,
+        `hover--send`,
+        `hover--external`,
+        `hover--play`,
+        `hover--pause`,
+        `hover--circle`
+    );
+};

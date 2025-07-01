@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Loader = ({ message }) => {
     return (
@@ -7,7 +7,7 @@ const Loader = ({ message }) => {
             <p>{message}</p>
         </div>
     );
-}
+};
 
 Loader.propTypes = {
     message: PropTypes.string.isRequired,

@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import Media from "./Media";
+import PropTypes from 'prop-types';
+import Media from './Media';
 
 const SkillItem = ({ skill }) => {
     return (
@@ -7,11 +7,11 @@ const SkillItem = ({ skill }) => {
             {skill.mediaType && <Media className="skill__img" media={skill} />}
             <p className="skill__name">{skill.name}</p>
         </li>
-    )
-}
+    );
+};
 
 SkillItem.propTypes = {
     skill: PropTypes.object.isRequired,
 };
 
-export default SkillItem
+export default SkillItem;

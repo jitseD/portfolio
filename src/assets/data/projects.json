@@ -14,18 +14,8 @@
                     "tagType": "design"
                 }
             ],
-            "tools": [
-                "Figma",
-                "Photoshop",
-                "VS Code"
-            ],
-            "code": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Vite",
-                "responsive images"
-            ],
+            "tools": ["Figma", "Photoshop", "VS Code"],
+            "code": ["HTML", "CSS", "JavaScript", "Vite", "responsive images"],
             "date": "January 2024",
             "url": "https://www.jitsedekeyser.be/devine/trainworld",
             "moreUrls": [
@@ -48,14 +38,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -68,15 +51,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -87,14 +62,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -106,14 +74,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -126,15 +87,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -145,14 +98,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -164,14 +110,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -184,15 +123,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -203,14 +134,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -222,14 +146,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -242,15 +159,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -261,14 +170,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -291,16 +193,8 @@
                     "tagType": "development"
                 }
             ],
-            "tools": [
-                "VS Code",
-                "Teachable Machine"
-            ],
-            "code": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "ml5.js"
-            ],
+            "tools": ["VS Code", "Teachable Machine"],
+            "code": ["HTML", "CSS", "JavaScript", "ml5.js"],
             "date": "October 2023",
             "url": "https://www.jitsedekeyser.be/devine/gesture-sound-ai",
             "moreUrls": [
@@ -323,14 +217,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -344,14 +231,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -365,14 +245,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -386,14 +259,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -418,10 +284,7 @@
                     "tagType": "design"
                 }
             ],
-            "tools": [
-                "Figma",
-                "Photoshop"
-            ],
+            "tools": ["Figma", "Photoshop"],
             "date": "December 2023",
             "url": "https://www.figma.com/proto/5vYln2cRUAeJCv9i04jq63/Lotus-Bakeries-Conference...",
             "moreUrls": null,
@@ -439,14 +302,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -459,15 +315,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -478,14 +326,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -497,14 +338,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -517,15 +351,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -536,14 +362,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -555,14 +374,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -575,15 +387,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -594,14 +398,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -613,14 +410,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -633,15 +423,7 @@
                             "sizes": "(min-width: 1800px) 525px, (min-width: 500px) 30vw, 60vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000, 1200, 1600]
                             }
                         },
                         {
@@ -652,14 +434,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 500px) 20vw, 40vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -686,11 +461,7 @@
                     "tagType": "motion"
                 }
             ],
-            "tools": [
-                "Figma",
-                "Photoshop",
-                "After Effects"
-            ],
+            "tools": ["Figma", "Photoshop", "After Effects"],
             "date": "April 2024",
             "url": null,
             "moreUrls": null,
@@ -707,15 +478,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -726,15 +489,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -745,15 +500,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -764,15 +511,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -799,10 +538,7 @@
                     "tagType": "design"
                 }
             ],
-            "tools": [
-                "Figma",
-                "Photoshop"
-            ],
+            "tools": ["Figma", "Photoshop"],
             "date": "November 2023",
             "url": "https://www.figma.com/proto/h9KjN734q86iuMv3jcyEMT/Lotus-Bakeries-Campaign?page-id=2%3A5&node-id=100-964&node-type=canvas&viewport=674%2C491%2C0.04&t=l5qd7gsdM3AgfiEN-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=154%3A170",
             "moreUrls": null,
@@ -820,14 +556,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -841,14 +570,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -862,14 +584,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -883,14 +598,7 @@
                             "srcSet": {
                                 "type": "avif",
                                 "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1200,
-                                    1600,
-                                    2000,
+                                    200, 400, 600, 800, 1000, 1200, 1600, 2000,
                                     2700
                                 ]
                             }
@@ -914,15 +622,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -933,15 +633,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -952,15 +644,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -971,15 +655,7 @@
                             "sizes": "(min-width: 1800px) 360px, (min-width: 1050px) 20vw, (min-width: 500px) 33vw, 50vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    300,
-                                    400,
-                                    600,
-                                    800,
-                                    1000,
-                                    1080
-                                ]
+                                "sizes": [200, 300, 400, 600, 800, 1000, 1080]
                             }
                         },
                         {
@@ -1002,11 +678,7 @@
                     "tagType": "motion"
                 }
             ],
-            "tools": [
-                "After Effects",
-                "Audition",
-                "Photoshop"
-            ],
+            "tools": ["After Effects", "Audition", "Photoshop"],
             "date": "March 2024",
             "url": "https://vimeo.com/1013344283",
             "behanceUrl": null,
@@ -1023,13 +695,7 @@
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -1040,13 +706,7 @@
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -1057,13 +717,7 @@
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000]
                             }
                         },
                         {
@@ -1074,13 +728,7 @@
                             "sizes": "(min-width: 1800px) 900px, (min-width: 500px) 50vw, 100vw",
                             "srcSet": {
                                 "type": "avif",
-                                "sizes": [
-                                    200,
-                                    400,
-                                    600,
-                                    800,
-                                    1000
-                                ]
+                                "sizes": [200, 400, 600, 800, 1000]
                             }
                         },
                         {
