@@ -33,9 +33,9 @@ const About = () => {
                 <h2 className="bio__title emph">I&#39;m Jitse</h2>
                 <em className="bio__hey hey emph outline">Hey</em>
                 <div className="bio__text">
-                    <p>I&#39;m a third-year student in <strong>Digital Design and Development</strong> at Howest in Kortrijk, Belgium. Currently I&#39;m on exchange in Norway, studying IT at USN <strong>exploring my interests</strong> within the vast field of IT and development.</p>
-                    <p>I&#39;m driven by a passion for <strong>detail</strong> and a commitment to creating <strong>unique</strong>, <strong>high-quality</strong> work. I continually seek to improve and expand my knowledge, <strong>eager to learn</strong> in this ever-evolving industry.</p>
-                    <p>My journey into digital design and development started with a curiosity about how creativity and technology intersect. My studies and experiences abroad are <strong>broadening my perspective</strong> and shaping my ability to approach problems from various angles, enabling me to develop innovative, user-centered solutions.</p>
+                    <p>I recently graduated from the <strong>Digital Design and Development</strong> program at Howest in Kortrijk, Belgium. As part of my studies, I went on Erasmus to Norway, where I studied IT at USN and explored my interests in the broader field of development and technology.</p>
+                    <p>In my final year, I completed a <strong>14-week internship</strong> at Antenna in Ghent. There, I gained <strong>hands-on experience</strong> by working closely with a team, taking ownership of projects, and developing both my technical and creative skills.</p>
+                    <p>I&#39;m passionate about <strong>detail</strong> and committed to creating <strong>unique</strong>, <strong>high-quality</strong> work. Studying abroad and completing an internship gave me a broader perspective on the industry. It taught me to adapt and collaborate, but most importantly to <strong>keep learning</strong>.</p>
                 </div>
                 <div className="bio__imgs">
                     <img

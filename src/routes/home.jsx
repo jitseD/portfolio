@@ -56,7 +56,7 @@ const Home = () => {
             <section className="intro">
                 <h2 className="intro__title emph">I&#39;m Jitse</h2>
                 <em className="intro__hey hey emph outline">Hey</em>
-                <p className="intro__text">I&#39;m a student in <strong>Digital Design and Development</strong> at Howest in Belgium, currently on exchange in Norway, studying IT at USN. I love combining creativity and technology to create beautiful and innovative projects.</p>
+                <p className="intro__text">I recently graduated in <strong>Digital Design and Development</strong> from Howest in Belgium. After studying abroad and completing a semester-long internship, I&#39;m ready to step into the professional world, combining creativity and technology to build unique and innovative projects.</p>
                 <div className="intro__imgs stacked__imgs">
                     <img
                         className="intro__img"
