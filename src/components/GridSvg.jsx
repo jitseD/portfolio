@@ -68,41 +68,43 @@ const GridSvg = () => {
 
     return (
         <div className="grid__wrapper" ref={parentRef}>
-            {screenWidth >= 1050 ? (
-                <div ref={gridRef}>
-                    <svg className="grid" width="1800" height="2425" viewBox="0 0 1800 2425" fill="none">
-                        <path d="M1638 1V2425" stroke="#F2F2F2" />
-                        <path d="M82 0V2425" stroke="#F2F2F2" />
-                        <path d="M1140 1V2425" stroke="#F2F2F2" />
-                        <path d="M1800 57.0469L2.49654 57.0469" stroke="#F2F2F2" />
-                        <path d="M1800 429.031L2.49654 429.031" stroke="#F2F2F2" />
-                        <path d="M1800 889.641L2.49654 889.641" stroke="#F2F2F2" />
-                        <path d="M1800 1277.85H2.49654" stroke="#F2F2F2" />
-                        <path d="M1797.5 1916.96H0.00044632" stroke="#F2F2F2" />
-                        <path d="M1797.5 2234.02H0.00044632" stroke="#F2F2F2" />
-                    </svg>
-                    <div className="grid__background"></div>
-                </div>
-            ) : screenWidth >= 750 ? (
-                <div ref={gridRef}>
-                    <svg className="grid" width="745" height="1906" viewBox="0 0 745 1906" fill="none">
-                        <path d="M603 0V1906" stroke="#F2F2F2" />
-                        <path d="M745 169L0.999989 169" stroke="#F2F2F2" />
-                        <path d="M745 629H0.999989" stroke="#F2F2F2" />
-                        <path d="M745 953H0.999989" stroke="#F2F2F2" />
-                        <path d="M744 1122H-1.14441e-05" stroke="#F2F2F2" />
-                        <path d="M745 1811H0.999989" stroke="#F2F2F2" />
-                        <path d="M745 1487H0.999989" stroke="#F2F2F2" />
-                        <path d="M723 0V1906" stroke="#F2F2F2" />
-                        <path d="M22 0V1906" stroke="#F2F2F2" />
-                    </svg>
-                    <div className="grid__background"></div>
-                </div>
-            ) : (
-                <div className="" ref={gridRef}>
-                    <div className="grid__background"></div>
-                </div>
-            )}
+            <div className="grid__content" ref={gridRef}>
+                {screenWidth >= 1050 ? (
+                    <>
+                        <svg className="grid" width="1800" height="2425" viewBox="0 0 1800 2425" fill="none">
+                            <path d="M1638 1V2425" stroke="#F2F2F2" />
+                            <path d="M82 0V2425" stroke="#F2F2F2" />
+                            <path d="M1140 1V2425" stroke="#F2F2F2" />
+                            <path d="M1800 57.0469L2.49654 57.0469" stroke="#F2F2F2" />
+                            <path d="M1800 429.031L2.49654 429.031" stroke="#F2F2F2" />
+                            <path d="M1800 889.641L2.49654 889.641" stroke="#F2F2F2" />
+                            <path d="M1800 1277.85H2.49654" stroke="#F2F2F2" />
+                            <path d="M1797.5 1916.96H0.00044632" stroke="#F2F2F2" />
+                            <path d="M1797.5 2234.02H0.00044632" stroke="#F2F2F2" />
+                        </svg>
+                        <div className="grid__background"></div>
+                    </>
+                ) : screenWidth >= 750 ? (
+                    <>
+                        <svg className="grid" width="745" height="1906" viewBox="0 0 745 1906" fill="none">
+                            <path d="M603 0V1906" stroke="#F2F2F2" />
+                            <path d="M745 169L0.999989 169" stroke="#F2F2F2" />
+                            <path d="M745 629H0.999989" stroke="#F2F2F2" />
+                            <path d="M745 953H0.999989" stroke="#F2F2F2" />
+                            <path d="M744 1122H-1.14441e-05" stroke="#F2F2F2" />
+                            <path d="M745 1811H0.999989" stroke="#F2F2F2" />
+                            <path d="M745 1487H0.999989" stroke="#F2F2F2" />
+                            <path d="M723 0V1906" stroke="#F2F2F2" />
+                            <path d="M22 0V1906" stroke="#F2F2F2" />
+                        </svg>
+                        <div className="grid__background"></div>
+                    </>
+                ) : (
+                    <>
+                        <div className="grid__background"></div>
+                    </>
+                )}
+            </div>
         </div>
     );
 };
